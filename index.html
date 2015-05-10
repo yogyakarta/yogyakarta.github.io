@@ -1,733 +1,1559 @@
-<!DOCTYPE html>
-<html lang="en-US">
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>  <html class="ie ie6 lte9 lte8 lte7 no-js"> <![endif]-->
+<!--[if IE 7]>     <html class="ie ie7 lte9 lte8 lte7 no-js"> <![endif]-->
+<!--[if IE 8]>     <html class="ie ie8 lte9 lte8 no-js">      <![endif]-->
+<!--[if IE 9]>     <html class="ie ie9 lte9 no-js">           <![endif]-->
+<!--[if gt IE 9]>  <html class="no-js">                       <![endif]-->
+<!--[if !IE]><!--> <html class="no-js">                       <!--<![endif]-->
 <head>
-    <meta charset="UTF-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>IDWEBDesigner Yogyakarta</title>
-    <link rel="profile" href="http://gmpg.org/xfn/11" />
-    <link rel="pingback" href="xmlrpc.php" />
-    <meta name="viewport" content="width=device-width">
-<link rel="apple-touch-icon-precomposed" href="apple-touch-icon.html">
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-57x57.html" />
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.html" />
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.html" />
-<link rel="alternate" type="application/rss+xml" title="MEE &raquo; Feed" href="feed/index.html" />
-<link rel="alternate" type="application/rss+xml" title="MEE &raquo; Comments Feed" href="comments/feed/index.html" />
-<link rel="shortcut icon" href="wp-content/themes/meetheme-v1.0.5/assets/images/favicon.ico" />
-<link rel="alternate" type="application/rss+xml" title="MEE &raquo; Home Comments Feed" href="home/feed/index.html" />
-<link rel='stylesheet' id='contact-form-7-css'  href='wp-content/plugins/contact-form-7/includes/css/stylesf39e.css?ver=4.0.1' type='text/css' media='all' />
-<link rel='stylesheet' id='meetheme-style-css'  href='wp-content/themes/meetheme-v1.0.7/stylef9b8.css?ver=4.0' type='text/css' media='all' />
-<style type='text/css'>
-                        #menu.menu nav {
-    top:220px !important;
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>WEBDesigner Indonesia</title>
     
-}                    
-</style>
-<link rel='stylesheet' id='Roboto-Fonts-css'  href='http://fonts.googleapis.com/css?family=Roboto%3A400%2C300italic%2C300%2C100italic%2C100%2C400italic%2C500%2C500italic%2C700%2C900%2C900italic%2C700italic%7COswald%3A400%2C300%2C700&amp;ver=1.0.0.0' type='text/css' media='screen' />
-<link rel='stylesheet' id='font-awesome-css'  href='css/font-awesomef9b8.css?ver=4.0' type='text/css' media='all' />
-<link rel='stylesheet' id='sample-style-css'  href='css/sample-stylef9b8.css?ver=4.0' type='text/css' media='all' />
-<link rel='stylesheet' id='owl.carousel-css'  href='css/owl.carouself9b8.css?ver=4.0' type='text/css' media='all' />
-<link rel='stylesheet' id='skin-css'  href='css/skinf9b8.css?ver=4.0' type='text/css' media='all' />
-<link rel='stylesheet' id='scroll-css'  href='css/scrollf9b8.css?ver=4.0' type='text/css' media='all' />
-<link rel='stylesheet' id='style-css'  href='css/stylef9b8.css?ver=4.0' type='text/css' media='all' />
-<link rel='stylesheet' id='portfolio-css'  href='css/portfoliof9b8.css?ver=4.0' type='text/css' media='all' />
-<link rel='stylesheet' id='carousel-css'  href='css/carouself9b8.css?ver=4.0' type='text/css' media='all' />
-<link rel='stylesheet' id='responsive-css'  href='css/responsivef9b8.css?ver=4.0' type='text/css' media='all' />
-<link rel='stylesheet' id='custom-css'  href='css/customf9b8.css?ver=4.0' type='text/css' media='all' />
-<link rel='stylesheet' id='jquery.fancybox-css'  href='js/portfolio/source/jquery.fancybox0e03.css?ver=1.0.0.0' type='text/css' media='screen' />
-<link rel='stylesheet' id='js_composer_custom_css-css'  href='wp-content/uploads/js_composer/custom7035.css?ver=4.3.4' type='text/css' media='screen' />
-<link rel='stylesheet' id='redux-google-fonts-css'  href='http://fonts.googleapis.com/css?family=Roboto%7COswald&amp;ver=1424878443' type='text/css' media='all' />
-<script type='text/javascript' src='js/jquery/jquery90f9.js?ver=1.11.1'></script>
-<script type='text/javascript' src='js/jquery/jquery-migrate.min1576.js?ver=1.2.1'></script>
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wlwmanifest.xml" /> 
-<meta name="generator" content="WordPress 4.0" />
-<link rel='canonical' href='index.html' />
-<link rel='shortlink' href='index.html' />
-<script type="text/javascript">                        jQuery(document).ready(function(){
+	<meta name="description" content="Jogja +F Web Designer adalah desainer web-responsif dari Yogyakarta, Indonesia. Bagian dari Jogja +F Labs Experiments yang mengembangkan proyek berbasis web. Kami membuat web lebih intuitif dan spesial dengan efek animasi, full screen (pilihan), ramah mobile browser, sederhana, dan menggunakan standar web modern dengan HTML5, CSS3, jQuery, dan Javascript. Tidak ada Flash atau plugin lain pihak ketiga. Kami selalu membangun dari konsep, kami membuat web original dan futuristik." />
+	<meta name="keywords" content="Jogja +F Web Designer, desainer web responsif, Yogyakarta, Indonesia, Jogja +F Labs Experiments, web, intuitif, efek, animasi, full screen, mobile browser, sederhana, standar web modern, HTML5, CSS3, jQuery, dan Javascript, original, futuristik" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    
+    <!-- // Handheld devices misc // -->
+    
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="HandheldFriendly" content="true"/>   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
 
-});                                            jQuery(document).ready(function(){
+    <!-- // Stylesheets // -->
+    
+    <link rel="stylesheet" href="bootstrap/core/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="bootstrap/select2/select2.css"/>
+    <link rel="stylesheet" href="bootstrap/datepicker/css/datepicker.css"/>
+    <link rel="stylesheet" href="bootstrap/fileupload/bootstrap-fileupload.min.css"/>
+    <link rel="stylesheet" href="bootstrap/typeahead/typeahead.min.css"/>
+    <link rel="stylesheet" href="bootstrap/colorpicker/css/colorpicker.css"/>
+    <link rel="stylesheet" href="bootstrap/timepicker/css/bootstrap-timepicker.min.css"/>
+    <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-custom.css"/>
+    <link rel="stylesheet" href="css/bootstrap-extended.css"/>
+    <link rel="stylesheet" href="css/animate.min.css"/>
+    <link rel="stylesheet" href="css/helpers.css"/>
+    <link rel="stylesheet" href="css/base.min.css"/>
+    <link rel="stylesheet" href="css/light-theme.css"/>
+    <link rel="stylesheet" href="css/mediaqueries.css"/>
+    <link rel="stylesheet" href="css/responsivegallery.css"/>
 
-});                    </script>	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
-<meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress."/>
-<!--[if IE 8]><link rel="stylesheet" type="text/css" href="http://demo.nrgthemes.com/projects/mee/wp-content/plugins/js_composer/assets/css/vc-ie8.css" media="screen"><![endif]--><style type="text/css" title="dynamic-css" class="options-output">body{font-family:Roboto;font-weight:normal;font-style:normal;}.menu nav a{font-family:Oswald;font-weight:normal;font-style:normal;}h1{font-family:Oswald;font-weight:normal;font-style:normal;}h2{font-family:Oswald;font-weight:normal;font-style:normal;}h3{font-family:Oswald;font-weight:normal;font-style:normal;}h4{font-family:Oswald;font-weight:normal;font-style:normal;}h5{font-family:Oswald;font-weight:normal;font-style:normal;}h6{font-family:Oswald;font-weight:normal;font-style:normal;}.introduction-end{background-image:url('wp-content/themes/meetheme-v1.0.5/assets/images/profile-big.jpg');}</style>
-        <style>
-      #map-canvas {
-        height: 100%;
-        margin: 0px;
-        padding: 0px
-      }
-    </style>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-    <script>
-function initialize() {
-  var myLatlng = new google.maps.LatLng(-7.772774, 110.401171);
-  var mapOptions = {
-    zoom: 14,
-    center: myLatlng
-  }
-  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+    <!-- // Primary Javascript // -->
 
-  var marker = new google.maps.Marker({
-      position: myLatlng,
-      map: map,
-      title: 'Hello World!'
-  });
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
-
-    </script>
-
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-<link rel="stylesheet" href="css/github-activity.css">
-
-<script src="//code.jquery.com/jquery-1.11.0.js"></script>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-<script type="text/javascript" src="js/github-activity.js"></script>
-
-<script>
-  function updateFeed(username) {
-    GitHubActivity.feed({ username: username, selector: '#feed' });
-  }
-
-  $(document).ready(function() {
-    updateFeed('faridiot');
-
-    $('#update').click(function() { updateFeed($("#username").val()); });
-    $("#username").keypress(function(e) {
-      if (e.which === 13) {
-        updateFeed($("#username").val());
-      }
-    });
-  });
-</script>
+    <script src="js/countup/datetime.js"></script>
 
 </head>
-<body class="home page page-id-7 page-template page-template-page-templatesone-page-php wpb-js-composer js-comp-ver-4.3.4 vc_responsive">
-    <div id="container" class="container">
-                <!-- Left Menu / Logo-->
-        <aside class="menu" id="menu">
-            <!-- Mobile Navigation-->
-            <a href="#menu1" class="menu-link"></a>
-                            <nav id="menu1" role="navigation">
-                    <ul><li id="menu-item-83" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-83"><a class="pluton-menu" title="Profile" href="#chapterprofile"><span id="link_about">Profile</span></a></li>
-<li id="menu-item-84" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84"><a class="pluton-menu" title="Color Code" href="#chaptercode"><span id="link_my-skills">Color Code</span></a></li>
-<li id="menu-item-145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-145"><a class="pluton-menu" title="Repositories" href="#chapterrepositories"><span id="link_experience">Repositories</span></a></li>
-<li id="menu-item-146" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-146"><a class="pluton-menu" title="Playlist" href="#chapterplaylist"><span id="link_education">Playlist</span></a></li>
-<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-147"><a class="pluton-menu" title="Public Activity" href="#chapteractivity"><span id="link_portfolio">Public Activity</span></a></li>
-<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a class="pluton-menu" title="Articles" href="#chapterarticles"><span id="link_contact">Articles</span></a></li>
-<li id="menu-item-151" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-151"><a title="Maps" href="../">Maps</a></li>
-</ul>                                    </nav>
+<body> 
+	<div id="container" class="clearfix">
+
+    <!-- ******************************************** 
+         * SIDEBAR MAIN:                            *
+         *                                          *
+         * the part which contains the main         *
+         * navigation, logo, search and more...     *
+         * (parts can be in both sidebars).         *
+         ******************************************** -->
+                   
+		<aside id="sidebar-main" class="sidebar">
             
-            <div class="copyright">© IDWEBDESIGNER</div>
-        </aside>
-        <a href="#menu" class="totop-link">Go to the top</a>
-                <div class="content-scroller">
-            <div class="content-wrapper">
-                <!-- Introduction -->
-                <article class="content introduction noscroll" id="chapterintroduction">
-                <div id="map-canvas"></div>
-                </article>
-<article class="content page-half about white-bg page-half" id="chapterprofile" style="background-image:url(http://errors.stablehost.com/406.php);background-repeat: no-repeat;"><div class="inner inner-half-width"><div class="page-title"><h2>designer.web.id</h2><div class="title-divider"></div></div><div id="pluton-663" class="wpb_row vc_row-fluid  container" style="">
-	<div class="vc_col-sm-12 wpb_column vc_column_container">
-		<div class="wpb_wrapper">
-						<div class="the-title">
-									<h3>Indonesia Web Designer</h3>
-													<p>IDWEBDesigner (Indonesia Web Designer) adalah desainer grafis dan desainer web responsif dari Yogyakarta, Indonesia. Bekerja professional membuat web cepat disemua perangkat, desktop maupun perangkat mobile.</p><br/>
-				            </div>
-		
-		    <div class="about-con">
-				<ul>
-                <li>Website: DESIGNER.WEB.ID</li>
-                <li>Contact Human: <a href="mailto:andrew@gmail.com">farid@designer.web.id (Farid)</a></li>
-                <li>Phone & Whatsapp: +6281392541831</li>
-                <li>BBM: 53EFAA49 Twitter @IDWEBDesigner</li>
-                <li>Address: Jl. K.H. Wahid Hasyim No. 3 Gaten Condongcatur Depok Sleman Yogyakarta 55283</li>
-                <li>Nationality: Indonesia</li>
-              </ul>		    </div>
+        	<div class="sidebar-logo">
+            	<a href="../" id="logo-big"><h1>WEBDesigner</h1><h2>/ Yogyakarta, ID</h2></a>
+            </div><!-- End .sidebar-logo -->
 
-		
-	<div class="wpb_text_column wpb_content_element ">
-		<div class="wpb_wrapper">
-			<p><img src="images/idwebdesigner.png" width="200px"><p>
-		</div> 
-	</div> 
-		</div> 
-	</div> 
-</div>
-</div></article><article class="content page-half my-skills white-bg page-half" id="chaptercode"><div class="inner "><div class="page-title"><h2>Color Code</h2><div class="title-divider"></div></div><div id="pluton-999" class="wpb_row vc_row-fluid  " style="">
-	<div class="vc_col-sm-12 wpb_column vc_column_container">
-		<div class="wpb_wrapper">
-						<div class="the-title">
-									<h3>Hexadecimal HTML Color Codes</h3>
-									<p>HTML color codes are hexadecimal triplets representing the colors red, green, and blue (#RRGGBB). For example, in the color red, the color code is #FF0000, which is '255' red, '0' green, and '0' blue. These color codes can be used to change the color of the background, text, and tables on a web page.</p>
-				            </div>
-		<div style="clear:both; width:100%; height:50px"></div>
-		</div> 
-	</div> 
-</div>
-                <div id="pluton-136" class="wpb_row vc_row-fluid  container" style="">
-                    <table class="table table-bordered">
-                    <tr>
-                    <th style="width:180px">Color Name</th><th>Color</th><th style="width:100px">&nbsp;Code</th>
-                    </tr>
-
-                    <tr>
-                    <td>AliceBlue</td><td style="background-color:#f0f8ff;"></td><td>&nbsp;#f0f8ff</td>
-                    </tr>
-                    <tr>
-                    <td>turquoise</td><td style="background-color:#40e0d0;"></td><td>&nbsp;#40e0d0</td>
-                    </tr>
-                    <tr>
-                    <td>violet</td><td style="background-color:#ee82ee;"></td><td>&nbsp;#ee82ee</td>
-                    </tr>
-                    <tr>
-                    <td>VioletRed</td><td style="background-color:#d02090;"></td><td>&nbsp;#d02090</td>
-                    </tr>
-                    <tr>
-                    <tr>
-                    <td>wheat</td><td style="background-color:#f5deb3;"></td><td>&nbsp;#f5deb3</td>
-                    </tr>
-                    <tr>
-                    <td>white</td><td style="background-color:#ffffff;"></td><td>&nbsp;#ffffff</td>
-                    </tr>
-                    <tr>
-                    <td>WhiteSmoke</td><td style="background-color:#f5f5f5;"></td><td>&nbsp;#f5f5f5</td>
-                    </tr>
-                    <tr>
-                    <td>YellowGreen</td><td style="background-color:#9acd32;"></td><td>&nbsp;#9acd32</td>
-                    </tr>
-
-                    </table>
+            <!-- ********** -->
+            <!-- NEW MODULE -->
+            <!-- ********** -->
+                    
+            <div class="sidebar-module"> 
+                <div class="sidebar-profile">
+                    <img src="images/users/farid.jpg" alt="" class="avatar"/>
+                    <ul class="sidebar-profile-list">
+                        <li><h3>Ahmad Farid Mubarok</h3></li>
+                        <li><h6><i>Yogyakarta, ID <i class="fa fa-check-circle"></i></i></h6></li>
+                    </ul>
+                </div><!-- End .sidebar-profile -->
+            </div><!-- End .sidebar-module --> 
+                    
+            <div class="sidebar-line"><!-- A seperator line --></div>
+            
+            <!-- * Tabs can be removed, if so dont forget * -->
+            <!-- * to remove the .tab-pane divs(wrapper). * -->
+             
+            <ul class="ext-tabs-sidebar">
+                <li class="active">
+                    <a href="#sidebar-tab-1"><i class="fa fa-bars"></i> Navigasi</a>
+                </li>
+                <li>
+                    <a href="#sidebar-tab-2"><i class="fa fa-youtube-play"></i> Video</a>
+                </li>            
+            </ul><!-- End .ext-tabs-sidebar -->
+            <div class="tab-content">
+                <div id="sidebar-tab-1" class="tab-pane active clearfix">
+                
+                    <!-- ********** -->
+                    <!-- NEW MODULE -->
+                    <!-- ********** -->
+                    
+                    <div class="sidebar-module"> 
+                        <nav class="sidebar-nav-v2">                         
+                            <ul>
+                                <li class="page-arrow active-page">
+                                    <a href="../"><i class="fa fa-dashboard"></i> Beranda <span class="indicator-pill">32</span></a>
+                                </li>
+                                <li>
+                                    <a href="../etalase.html"><i class="fa fa-github-alt"></i> Etalase Kerja</a>
+                                </li>
+                                <li>
+                                    <a href="../formulir.html"><i class="fa fa-envelope-o"></i> Formulir Wizard</a>
+                                </li>
+                                <li>
+                                    <a href="../javascript.html"><i class="fa fa-sort-alpha-asc"></i> Javascript</a>
+                                </li>
+                                <li>
+                                    <a href="../coreldraw.html"><i class="fa fa-stack-overflow "></i> CorelDRAW</a>
+                                </li>
+                                <li>
+                                    <a href="../linimasa.html"><i class="fa  fa-circle-o"></i> Linimasa</a>
+                                </li>
+                                <li>
+                                    <a href="../bookmarks.html"><i class="fa  fa-bookmark-o"></i> Bookmarks</a>
+                                </li>
+                                <li>
+                                    <a href="../media.html"><i class="fa fa-picture-o"></i> Media</a>
+                                </li>                
+                                <li>
+                                    <a href="../perencanaan.html"><i class="fa  fa-check-square-o"></i> Perencanaan</a>
+                                </li>
+                                <li>
+                                    <a href="../peta.html"><i class="fa fa-map-marker"></i> Peta</a>
+                                </li> 
+                            </ul>
+                        </nav><!-- End .sidebar-nav-v1 --> 
+             		</div><!-- End .sidebar-module -->                                     
+                </div>                
+            	<div id="sidebar-tab-2" class="tab-pane clearfix">
+                
+                    <!-- ********** -->
+                    <!-- NEW MODULE -->
+                    <!-- ********** -->
+	                        
+                    <div class="sidebar-module"> 
+                    	<div class="video-container">
+                            <iframe width="560" height="315" src="//www.youtube.com/embed/oqbO8AuSXk8" frameborder="0" allowfullscreen></iframe>
+                            <p><a href="http://www.youtube.com/embed/oqbO8AuSXk8">Partai Besar Indonesia 1</a>.</p>
+                        </div><!-- End .video-container --> 
+                        <div class="spacer-20"></div>
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="//www.youtube.com/embed/02UEMXz3FhI" frameborder="0" allowfullscreen></iframe>
+                            <p><a href="http://www.youtube.com/embed/02UEMXz3FhI">Partai Besar Indonesia 2</a>.</p>
+                        </div><!-- End .video-container -->
+                        <div class="spacer-20"></div>
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="//www.youtube.com/embed/VeYb_AbMqM0" frameborder="0" allowfullscreen></iframe>
+                            <p><a href="http://www.youtube.com/embed/02UEMXz3FhI">Partai Besar Indonesia 3</a>.</p>
+                        </div><!-- End .video-container --> 
+                    </div><!-- End .sidebar-module -->
                 </div>
-                <div id="pluton-374" class="wpb_row vc_row-fluid  container" style="">
-	<div class="vc_col-sm-12 wpb_column vc_column_container">
-		<div class="wpb_wrapper">
-			<div class="full-divider" style="margin-top:50"></div>			<div class="the-title">
-									<h3>Knowledge & Skills</h3>
-								            </div>
-		
-		</div> 
-	</div> 
-</div><div id="pluton-340" class="wpb_row vc_row-fluid  container" style="">
-	<div class="vc_col-sm-4 wpb_column vc_column_container">
-		<div class="wpb_wrapper">
-			
-	<div class="wpb_text_column wpb_content_element ">
-		<div class="wpb_wrapper">
-			<ul>
-<li>Google Analythics &amp; SEO</li>
-<li>Instal and Configure</li>
-<li>E-commerce Platform</li>
-<li>Color theory knowledge</li>
-</ul>
+            </div><!-- End .tab-content -->
+            
 
-		</div> 
-	</div> 
-		</div> 
-	</div> 
+            
+            <!-- ********** -->
+            <!-- NEW MODULE -->
+            <!-- ********** -->
+                    
+                            <div class="module-placeholder sidebar">
+                                <ul class="ext-tabs-sidebar">
+                                    <li class="active">
+                                        <a href="#sidebar-tab-1x"><i class="fa fa-html5"></i> HTML5</a>
+                                    </li>
+                                    <li>
+                                        <a href="#sidebar-tab-2x"><i class="fa fa-twitter"></i> Sosial</a>
+                                    </li>            
+                                </ul><!-- End .ext-tabs-sidebar -->
+                                <div class="tab-content">
+                                    <div id="sidebar-tab-1x" class="tab-pane active clearfix">
+                                        <div class="inner-padding">
+                                            <nav class="sidebar-nav-v2"> 
+                                WEBDesigner ID Latest Project</br></br>
+                                <ul>
+                                    <li>
+                                        <a href="http://ekspedisicandi.com"><i class="fa fa-pagelines"></i> ekspedisicandi<medium class="text-muted">.com</medium></a>
+                                    </li>
+                                    <li>
+                                        <a href="http://lentera.ppwahidhasyim.com"><i class="fa  fa-leaf"></i> lentera<medium class="text-muted">.ppwahidhasyim.com</medium></a>
+                                    </li>
+                                    <li>
+                                        <a href="http://ppwahidhasyim.com"><i class="fa fa-code"></i> ppwahidhasyim<medium class="text-muted">.com</medium></a>
+                                    </li>
+                                    <li>
+                                        <a href="http://yogyakarta.github.io"><i class="fa fa-file-text-o"></i> yogyakarta<medium class="text-muted">.github.io</medium></a>
+                                    </li>
+                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                    <div id="sidebar-tab-2x" class="tab-pane clearfix">
+                                        <div class="inner-padding">
+                                            <nav class="sidebar-nav-v2">
+                                                Faridiot.com adalah bagian dari Jogja +F Labs Experiments
+                                                <div class="spacer-20"></div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="http://facebook.com/faridiot"><i class="fa fa-facebook-square"></i> facebook.com<medium class="text-muted">/faridiot</medium></a>
+                                                    </li>    
+                                                    <li>
+                                                        <a href="http://twitter.com/faridiot"><i class="fa fa-twitter-square"></i> twitter.com<medium class="text-muted">/faridiot</medium></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="http://google.com/+/AhmadFaridMubarokfaridiot"><i class="fa fa-google-plus-square"></i> google.com<medium class="text-muted">/+/AhmadFarid...</medium></a>
+                                                    </li> 
+                                                    <li>
+                                                        <a href="http://youtube.com/faridiotHD"><i class="fa fa-youtube-square"></i> youtube.com<medium class="text-muted">/faridiotHD</medium></a>
+                                                    </li>                                                                                                                   
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div><!-- End .tab-content -->               
+                            </div><!-- End .module-placeholder -->
 
-	<div class="vc_col-sm-4 wpb_column vc_column_container">
-		<div class="wpb_wrapper">
-			
-	<div class="wpb_text_column wpb_content_element ">
-		<div class="wpb_wrapper">
-			<ul>
-<li>Photo manipulation skills</li>
-<li>Digital Painting</li>
-<li>Photo Composition</li>
-<li>Good sense of Tipography</li>
-</ul>
+                            <div class="sidebar-module">
+                <h3>
+                	Daftar Twitter sekarang
+                    <br/>
+                    <small class="text-muted">Mulai percakapan dan ikuti tweet faridiot</small>
+                </h3>
+                                <div class="spacer-10"></div>
+                                <div class="btn-count">
+                                	<span>180k</span>
+                                	<a href="http://twitter.com/faridiot" class="btn  btn-default"><i class="fa fa-twitter"></i>&nbsp; Pengikut</a>
+                                </div>
+                            </div> 
+            
+        </aside><!-- End aside --> 
 
-		</div> 
-	</div> 
-		</div> 
-	</div> 
+		<!-- ********************************************
+             * SIDEBAR SEC:                             *
+             *                                          *
+             * the part which contains things like      *
+             * calendar, users, lists, blocks and       *
+             * much more.                               *
+             ******************************************** -->
+        
+        <div id="sidebar-sec" class="sidebar"> 
+         
+        	<div class="sidebar-sec-top"></div> 
+                  
+            <!-- ********** -->
+            <!-- NEW MODULE -->
+            <!-- ********** -->
+                    
+            <div class="sidebar-module">               
+                <form class="input-group">
+                    <input type="text" name="" class="form-control" placeholder="Pencarian..." id="typeahead-sidebar-search"/>
+                    <div class="input-group-btn">
+                    	<!-- can NOT be used with typeahead
+                        <a href="#" class="clear-input"><i class="fa fa-times-circle"></i></a>
+                        -->
+                        <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                    </div>
+                </form>
+            </div><!-- End .sidebar-module -->  
+            
+            <div class="sidebar-line"><!-- A seperator line --></div>
 
-	<div class="vc_col-sm-4 wpb_column vc_column_container">
-		<div class="wpb_wrapper">
-			
-	<div class="wpb_text_column wpb_content_element ">
-		<div class="wpb_wrapper">
-			<ul>
-<li>Web Usability</li>
-<li>Grid &amp; Layout</li>
-<li>Portrait Retouching</li>
-<li>Video Editing</li>
-</ul>
+            <!-- * Tabs can be removed, if so dont forget * -->
+            <!-- * to remove the .tab-pane divs(wrapper). * -->
+             
+            <ul class="ext-tabs-sidebar">
+                <li class="active">
+                    <a href="#sidebar-tab-3"><i class="fa fa-user"></i> Kontak</a>
+                </li>
+                <li>
+                    <a href="#sidebar-tab-4"><i class="fa fa-check"></i> Jadwal</a>
+                </li>            
+            </ul><!-- End .ext-tabs-sidebar -->
+            <div class="tab-content">
+                <div id="sidebar-tab-3" class="tab-pane active">
 
-		</div> 
-	</div> 
-		</div> 
-	</div> 
-</div>
-                <div id="pluton-992" class="wpb_row vc_row-fluid  container" style="">
-	<div class="vc_col-sm-12 wpb_column vc_column_container">
-		<div class="wpb_wrapper">
-			<div class="full-divider" style="margin-top:50"></div>			<div class="the-title">
-									<h3>Terms of Service</h3>
-By using the designer.web.id web site service, or any services of IDWEBDesigner, you are agreeing to be bound by the following terms and conditions Terms of Service.
-								            </div>
-		
-		</div> 
-	</div> 
-</div>
-</div></article><article class="content page-half experience white-bg page-half" id="chapterrepositories"><div class="inner "><div class="page-title"><h2>Repositories</h2><div class="title-divider"></div></div><div id="pluton-209" class="wpb_row vc_row-fluid  container" style="">
-	<div class="vc_col-sm-12 wpb_column vc_column_container">
-		<div class="wpb_wrapper">
-						<div class="the-title">
-									<h3>"Build software better, together."</h3>
-													<p>IDWEBDesigner using web-based Git repository hosting service, which offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features to provides access control and several collaboration features such as wikis, task management, and bug tracking and feature requests for every project.</p>
-				            </div>
-		<div class="full-divider" style="margin-top:50"></div>			<div class="experience-details">
-              	<div class="col-6 margin-bottom50 margin-top50"><a href="http://ekspedisicandi.com">
-	                <div class="col-3 icon-block"><i class="fa fa-github"></i></div>
-	                <div class="flot-left">
-	                		                		<h5><small>ekspedisicandi.com</small></h5>
-	                		                		                		<h4>ekspedisicandi</h4>
-	                		                		                		<span><small>Updated a day ago</small></span>
-	                		                </div></a>
-              	</div>
-              	              		<div class="col-6 margin-bottom50 margin-top50">By using the designer.web.id web site service, or any services of IDWEBDesigner, you are agreeing to be bound by the following terms and conditions Terms of Service.</div>
-              	            </div>
-		<div class="full-divider" style="margin-top:50"></div>			<div class="experience-details">
-              	<div class="col-6 margin-bottom50 margin-top50"><a href="http://yogyakarta.designer.web.id">
-	                <div class="col-3 icon-block"><i class="fa fa-github"></i></div>
-	                <div class="flot-left">
-	                		                		<h5><small>yogyakarta.designer.web.id</small></h5>
-	                		                		                		<h4>yogyakarta</h4>
-	                		                		                		<span><small>Updated a day ago</small></span>
-	                		                </div></a>
-              	</div>
-              	              		<div class="col-6 margin-bottom50 margin-top50">By using the designer.web.id web site service, or any services of IDWEBDesigner, you are agreeing to be bound by the following terms and conditions Terms of Service.</div>
-              	            </div>
-		<div class="full-divider" style="margin-top:50"></div>			<div class="experience-details">
-              	<div class="col-6 margin-bottom50 margin-top50"><a href="http://designer.web.id">
-	                <div class="col-3 icon-block"><i class="fa fa-github"></i></div>
-	                <div class="flot-left">
-	                		                		<h5><small>designer.web.id</small></h5>
-	                		                		                		<h4>idwebdesigner</h4>
-	                		                		                		<span><small>Updated a day ago</small></span>
-	                		                </div></a>
-              	</div>
-              	              		<div class="col-6 margin-bottom50 margin-top50">By using the designer.web.id web site service, or any services of IDWEBDesigner, you are agreeing to be bound by the following terms and conditions Terms of Service.</div>
-              	            </div>
-		<div class="full-divider" style="margin-top:50"></div>			<div class="experience-details">
-              	<div class="col-6 margin-bottom50 margin-top50"><a href="http://prambanan.designer.web.id">
-	                <div class="col-3 icon-block"><i class="fa fa-github"></i></div>
-	                <div class="flot-left">
-	                		                		<h5><small>prambanan.designer.web.id</small></h5>
-	                		                		                		<h4>gitprambanan</h4>
-	                		                		                		<span><small>Updated a day ago</small></span>
-	                		                </div></a>
-              	</div>
-              	              		<div class="col-6 margin-bottom50 margin-top50">By using the designer.web.id web site service, or any services of IDWEBDesigner, you are agreeing to be bound by the following terms and conditions Terms of Service.</div>
-              	            </div>
-		
-		</div> 
-	</div> 
-</div>
-</div></article><article class="content page-half education white-bg page-half" id="chapterplaylist"><div class="inner "><div class="page-title"><h2>playlist</h2><div class="title-divider"></div></div><div id="pluton-936" class="wpb_row vc_row-fluid  container" style="">
-	<div class="vc_col-sm-12 wpb_column vc_column_container">
-		<div class="wpb_wrapper">
-						<div class="the-title">
-									<h3>New Evolution 21st Century</h3>
-													<p>2NE1 (Hangul: 투애니원) is a four-member South Korean girl group formed by YG Entertainment in 2009. The name, pronounced to anyone or twenty one, combines the phrases "21st century" and "new evolution. The band consists of CL, Minzy, Dara, and Park Bom.</p>
-				            </div>
-		<div class="full-divider" style="margin-top:50"></div>	
-            		
-            <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/2871762&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-            <hr/>
-            <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/36507423&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-            <hr/>
-            <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/24803825&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-		
-		</div> 
-	</div> 
-</div>
-</div></article><article class="content page-half portfolio white-bg page-half" id="chapteractivity"><div class="inner "><div class="page-title"><h2>Public Activity</h2><div class="title-divider"></div></div><div id="pluton-202" class="wpb_row vc_row-fluid  container" style="">
-	<div class="vc_col-sm-12 wpb_column vc_column_container">
-		<div class="wpb_wrapper">
-						<div class="the-title">
+                    <!-- ********** -->
+                    <!-- NEW MODULE -->
+                    <!-- ********** -->
                             
-							<h3>Graphic Design & Responsive Web</h3>
-							<p>IDWEBDesigner (Indonesia Web Designer) adalah desainer grafis dan desainer web responsif dari Yogyakarta, Indonesia. Bekerja professional membuat web cepat disemua perangkat, desktop maupun perangkat mobile.</p>
-				        </div>
-					<div class="portfolio-con">
-            	<div class="container-sub margin-top50">
-              		<div class="row">
-                		<div id="feed" style="height: 1000px; width: 100%"></div>
-                    </div>
+                    <div class="sidebar-module">                     
+                        <ul class="mini-list">
+                            <li>
+                                <img src="images/users/jokowi.jpg" width="100" height="100" alt="" class="avatar"/>
+                                <ul>
+                                    <li><a href="https://twitter.com/jokowi_do2" class="bold">Joko Widodo</a></li>
+                                    <li><a href="https://twitter.com/jokowi_do2">@jokowi_do2</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <img src="images/users/sri.jpg" width="100" height="100" alt="" class="avatar"/>
+                                <ul>
+                                    <li><a href="https://twitter.com/srimulyaninews" class="bold">Sri Mulyani</a></li>
+                                    <li><a href="https://twitter.com/srimulyaninews">@srimulyaninews</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <img src="images/users/anies.jpg" width="100" height="100" alt="" class="avatar"/>
+                                <ul>
+                                    <li><a href="https://twitter.com/aniesbaswedan" class="bold">Anies Baswedan</a></li>
+                                    <li><a href="https://twitter.com/aniesbaswedan">@aniesbaswedan</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <img src="images/users/jk.jpg" width="100" height="100" alt="" class="avatar"/>
+                                <ul>
+                                    <li><a href="https://twitter.com/JusufKalla" class="bold">Jusuf Kalla</a></li>
+                                    <li><a href="https://twitter.com/JusufKalla">@JusufKalla</a></li>
+                                </ul>
+                            </li>                        
+                            <li>
+                                <img src="images/users/din.jpg" width="100" height="100" alt="" class="avatar"/>
+                                <ul>
+                                    <li><a href="https://twitter.com/mdinsyamsuddin" class="bold">Din Syamsuddin</a></li>
+                                    <li><a href="https://twitter.com/mdinsyamsuddin">@mdinsyamsuddin</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <img src="images/users/puan.jpg" width="100" height="100" alt="" class="avatar"/>
+                                <ul>
+                                    <li><a href="https://twitter.com/puan_maharani" class="bold">Puan Maharani</a></li>
+                                    <li><a href="https://twitter.com/puan_maharani">@puan_maharani</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <img src="images/users/ahok.jpg" width="100" height="100" alt="" class="avatar"/>
+                                <ul>
+                                    <li><a href="https://twitter.com/basuki_btp" class="bold">Basuki Tjahja P</a></li>
+                                    <li><a href="https://twitter.com/basuki_btp">@basuki_btp</a></li>
+                                </ul>
+                            </li>                                                                                                
+                            <li>
+							<img src="images/users/yenny.jpg" width="100" height="100" alt="" class="avatar"/>
+                                <ul>
+                                    <li><a href="https://twitter.com/yennywahid" class="bold">Yenny Wahid</a></li>
+                                    <li><a href="https://twitter.com/yennywahid">@yennywahid</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <img src="images/users/ganjar.jpg" width="100" height="100" alt="" class="avatar"/>
+                                <ul>
+                                    <li><a href="https://twitter.com/ganjarpranowo" class="bold">Ganjar Pranowo</a></li>
+                                    <li><a href="https://twitter.com/ganjarpranowo">@ganjarpranowo</a></li>
+                                </ul>
+                            </li>                
+                            <li>
+							<img src="images/users/hemas.jpg" width="100" height="100" alt="" class="avatar"/>
+                                <ul>
+                                    <li><a href="https://twitter.com/RatuHemas" class="bold">GKR Hemas</a></li>
+                                    <li><a href="https://twitter.com/RatuHemas">@RatuHemas</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <img src="images/users/mahfudmd.jpg" width="100" height="100" alt="" class="avatar"/>
+                                <ul>
+                                    <li><a href="https://twitter.com/mohmahfudmd" class="bold">Mahfud MD</a></li>
+                                    <li><a href="https://twitter.com/mohmahfudmd">@mohmahfudmd</a></li>
+                                </ul>
+                            </li>          
+							</ul><!-- End .mini-list -->
+                    </div><!-- End .sidebar-module -->                                        
                 </div>
-            </div>
-		
-		</div> 
-	</div> 
-</div>
-</div></article><article class="content page-half contact white-bg page-half" id="chapterarticles"><div class="inner "><div class="page-title"><h2>Articles</h2><div class="title-divider"></div></div><div id="pluton-811" class="wpb_row vc_row-fluid  container" style="">
-	<div class="vc_col-sm-12 wpb_column vc_column_container">
-		<div class="wpb_wrapper">
-						<div class="the-title">
-									<h3>Graphic Design & Responsive Web</h3>
-													<p>IDWEBDesigner (Indonesia Web Designer) adalah desainer grafis dan desainer web responsif dari Yogyakarta, Indonesia. Bekerja professional membuat web cepat disemua perangkat, desktop maupun perangkat mobile.</p>
-				            </div>
-		<div class="full-divider" style="margin-top:50"></div>
+                <div id="sidebar-tab-4" class="tab-pane">
+                
+                    <!-- ********** -->
+                    <!-- NEW MODULE -->
+                    <!-- ********** -->
+	                        
+                    <div class="sidebar-module"> 
+                        <div class="sidebar-todo">
+                            <div class="sidebar-todo-day">
+                                <h5>Hari ini</h5>
+                                <ul>
+                                    <li>
+                                        <label class="line-through">Memulai proyek X<input type="checkbox" name="" checked/><span></span></label>
+                                    </li>
+                                    <li>
+                                        <label>Bayar tagihan bulanan<input type="checkbox" name=""/><span></span></label>
+                                    </li>
+                                    <li>
+                                        <label>Ujicoba mobile emulator<input type="checkbox" name=""/><span></span></label>
+                                    </li>
+                                    <li>
+                                        <label>Update blog<input type="checkbox" name=""/><span></span></label>
+                                    </li>
+                                </ul>
+                            </div><!-- End .sidebar-todo-day --> 
+                            <div class="sidebar-todo-day">
+                                <h5>Besok <span class="indicator-pill">32</span></h5>
+                                <ul>
+                                    <li>
+                                        <label>Meeting tim kreatif<input type="checkbox" name=""/><span></span></label>
+                                    </li>
+                                    <li>
+                                        <label>Meeting dengan klien J...<input type="checkbox" name=""/><span></span></label>
+                                    </li>
+                                    <li>
+                                        <label class="line-through">Beli SSD Kingston<input type="checkbox" name="" checked/><span></span></label>
+                                    </li>
+                                </ul>
+                            </div><!-- End .sidebar-todo-day --> 
+                            <div class="sidebar-todo-day">
+                                <h5>Minggu Depan</h5>
+                                <ul>
+                                    <li>
+                                        <label>Memulai proyek T<input type="checkbox" name=""/><span></span></label>
+                                    </li>
+                                    <li>
+                                        <label>Beli headphone baru<input type="checkbox" name=""/><span></span></label>
+                                    </li>
+                                    <li>
+                                        <label>Upgrade Windows 8.1<input type="checkbox" name=""/><span></span></label>
+                                    </li>
+                                    <li>
+                                        <label>Konser SNSD<input type="checkbox" name=""/><span></span></label>
+                                    </li>
+                                </ul>
+                            </div><!-- End .sidebar-todo-day --> 
+                        </div><!-- End .sidebar-todo -->
+                    </div><!-- End .sidebar-module -->               
+                </div>
+            </div><!-- End .tab-content --> 
+            
+        </div><!-- End #sidebar-sec -->          
+                 
+        <div id="main" class="clearfix">
+        
+        <!-- ******************************************** 
+             * MAIN HEADER:                             *
+             *                                          *  
+             * the part which contains the breadcrumbs, *
+             * dropdown menus, toggle sidebar button    *
+             ******************************************** -->
 
-		</div> 
-	</div> 
-</div>
-                <div id="pluton-359" class="wpb_row vc_row-fluid  container" style="">
-	<div class="vc_col-sm-12 wpb_column vc_column_container">
+			<header id="header-main">
+            	<div class="header-main-top">
+                	<div class="pull-left">
+                    
+                    	<!-- * This is the responsive logo * --> 
+                                   
+                    	<a href="../" id="logo-small"><h4>WEBDesigner</h4><h5>/ Yogyakarta, ID</h5></a>
+                    </div>
+                    <div class="pull-right">
+                        
+                    	<!-- * This is the trigger that will show/hide the menu * -->
+                        <!-- * if the layout is in responsive mode              * -->
+                        
+						<a href="#" id="responsive-menu-trigger">
+                        	<i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+                </div><!-- End #header-main-top --> 
+                <div class="header-main-bottom">
+                	<div class="pull-left">
+                    	<ul class="breadcrumb">
+                            <li><a href="../">Beranda</a></li>
+                            <li><a href="../">WEBDesigner Indonesia</a></li>
+                            <li class="active">Indeks</li>
+                        </ul><!-- End .breadcrumb -->
+                    </div> 
+                </div><!-- End #header-main-bottom -->            
+            </header><!-- End #header-main --> 
+        
+            <div id="content" class="clearfix">
 
-<div class="post-114 post type-post status-publish format-image has-post-thumbnail hentry category-blog blog-list blog-style-grid">
-    <div class="blog-list-details">
-                    <span class="date">February 15, 2015</span>
-                <h3 class="blog-post-title">Setting Viewport</h3>
-        <div class="post-details">
-			<span>IDWEBDesigner</span>
-	</div>        <div class="title-divider"></div>
-                    <p>Viewport adalah komponen yang paling penting yang kita butuhkan untuk membangun pengalaman multi-device. Tanpa itu, situs tidak akan bekerja dengan baik pada perangkat mobile. Viewport menunjukkan kepada browser bahwa halaman perlu disesuaikan dengan ukuran layar. Ada banyak konfigurasi untuk mengontrol viewport.</p>
-                                        <div class="contact-social margin-top30">
-	<a href="https://twitter.com/IDWEBDesigner" target="_blank"><i class="fa fa-twitter fa-lg"></i>IDWEBDesigner</a>
-</div>            </div>
-</div>
-<div class="post-114 post type-post status-publish format-image has-post-thumbnail hentry category-blog blog-list blog-style-grid">
-    <div class="blog-list-details">
-                    <span class="date">June 2, 2015 / </span>
-                <h3 class="blog-post-title">Responsif dengan semua perangkat</h3>
-        <div class="post-details">
-			<span>IDWEBDesigner</span>
-	</div>        <div class="title-divider"></div>
-                    <p>IDWEBDesigner membuat web responsif multi-device yang bekerja dengan baik di semua jenis perangkat yang memiliki kemampuan yang berbeda, ukuran layar yang berbeda dan metode interaksi yang berbeda. Web harus dapat diakses di semua perangkat dari ponsel layar kecil sampai monitor layar lebar.</p>
-                                        <div class="contact-social margin-top30">
-	<a href="https://twitter.com/IDWEBDesigner" target="_blank"><i class="fa fa-twitter fa-lg"></i>IDWEBDesigner</a>
-</div>            </div>
-</div>
-<div class="post-114 post type-post status-publish format-image has-post-thumbnail hentry category-blog blog-list blog-style-grid">
-    <div class="blog-list-details">
-                    <span class="date">September 25, 2015 / </span>
-                <h3 class="blog-post-title">Mobile friendly</h3>
-        <div class="post-details">
-			<span>IDWEBDesigner</span>
-	</div>        <div class="title-divider"></div>
-                    <p>Proses parsing HTML, CSS, dan JavaScript tergantung spesifikasi dan kecepatan perangkat mobile pengguna. Semakin kompleks maka terasa lambat. Seringkali itu bukan kesalahan jaringan internat, tapi kesalahan developer web. Misalnya memasang kode Javascript yang rumit dan tidak efisien, atau struktur halaman yang tidak sistematis.</p>
-                                        <div class="contact-social margin-top30">
-	<a href="https://twitter.com/IDWEBDesigner" target="_blank"><i class="fa fa-twitter fa-lg"></i>IDWEBDesigner</a>
-</div>            </div>
-</div>
-	</div> 
-</div>
-                <div id="pluton-773" class="wpb_row vc_row-fluid  " style="">
-	<div class="vc_col-sm-12 wpb_column vc_column_container">
-		<div class="wpb_wrapper">
-			<div style="clear:both; width:100%; height:0px"></div><div class="full-divider" style="margin-top:50"></div>				
-            <div class="contact-form">
-											<h6>Drop Me a Line</h6>
-										<div class="wpcf7" id="wpcf7-f6-p7-o1" lang="en-US" dir="ltr">
-<div class="screen-reader-response"></div>
-</div>				</div>
-			
-		</div> 
-	</div> 
-</div>
-</div></article>                    
-                            <!-- Introduction -->
-                <article class="content introduction-end" id="chapterthankyou">
-                    <div class="inner">
-                        <div class="introduction-end-con margin-top50">
+            <!-- ********************************************
+                 * HEADER SEC:                              *
+                 *                                          *   
+                 * the part which contains the page title,  *
+                 * buttons and dropdowns.                   *
+                 ******************************************** -->
+                
+                <header id="header-sec"> 
+                	<div class="inner-padding"> 
+                        <div class="pull-left">
+                            <h2>
+                                WEBDesigner Indonesia
+                            </h2>
+                        </div>
+                        <div class="pull-left hidden-xs hidden-sm hidden-md">
+                            <h2>:&nbsp;Warnai Duniamu</h2>
+                        </div>
+                        <div class="pull-right">
+                            <div class="dropdown hidden-xs hidden-sm hidden-md">
+                                <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <i class="fa fa-file-text"></i>
+                                </a>
+                                <div role="menu" class="dropdown-menu pull-center ext-dropdown-comments">
+                                    <div class="ext-dropdown-header">
+                                        <i class="fa fa-file-text"></i>
+                                        <h5>Unduh File</h5>
+                                        <a href="#" class="btn btn-default btn-sm delete-master"><i class="fa fa-trash-o"></i></a>
+                                        <span class="indicator-dot">3</span>
+                                    </div>
+                                    <div class="ext-dropdown-comments-content">
+                                        <div>
+                                            <img src="images/users/farid.jpg" alt="" class="avatar" />
+                                            <a href="#">Karma, a good thing</a>
+                                            <ul>
+                                                <li><span>Posted by:</span> <a href="#">Steven</a></li>
+                                                <li><span>Date:</span> Dec 11, 2012</li>
+                                                <li>
+                                                    <span>Actions:</span>
+                                                    <a href="#">Read</a> -
+                                                    <a href="#" class="delete">Delete</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <img src="images/users/user-4.jpg" alt="" class="avatar" />
+                                            <a href="#">A simple, fast way to reduce stress</a>
+                                            <ul>
+                                                <li><span>Posted by:</span> <a href="#">Linda</a></li>
+                                                <li><span>Date:</span> Dec 3, 2012</li>
+                                                <li>
+                                                    <span>Actions:</span>
+                                                    <a href="#">Read</a> -
+                                                    <a href="#" class="delete">Delete</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <img src="images/users/user-6.jpg" alt="" class="avatar" />
+                                            <a href="#">Blog: karma and revenge</a>
+                                            <ul>
+                                                <li><span>Posted by:</span> <a href="#">Debra Hopper</a></li>
+                                                <li><span>Date:</span> Nov 18, 2012</li>
+                                                <li>
+                                                    <span>Actions:</span>
+                                                    <a href="#">Read</a> -
+                                                    <a href="#" class="delete">Delete</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <span>No new comments</span>
+                                    </div>
+                                    <div class="ext-dropdown-footer">
+                                        <p>Updated: 11/12/2012 - 14:12</p>
+                                        <a href="#" class="btn btn-default btn-sm"><i class="fa fa-caret-right"></i></a>
+                                    </div>
+                                </div>
+                            </div><!-- End .dropdown -->
+                            <div class="btn-group hidden-xs hidden-sm hidden-md">
+                                <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#">
+                                    Pusat Unduhan <i class="fa fa-arrow-circle-o-down"></i> Gratis
+                                </a>
+                                <div role="menu" class="dropdown-menu pull-right ext-dropdown-inbox">
+                                    <div class="ext-dropdown-header">
+                                        <h5>ProjectX</h5>
+                                        <a href="#" class="btn btn-default btn-sm delete-master"><i class="fa fa-trash-o"></i></a>
+                                        <span class="indicator-dot">3</span>
+                                    </div>
+                                    <div class="ext-dropdown-inbox-content">
+                                        <div>
+                                            <a href="#">Faridiot Line</a>
+                                            <ul class="nav">
+                                                <li><span>Oleh:</span> <a href="#">A. Farid Mubarok</a></li>
+                                                <li><span>Tanggal:</span> Mei 12, 2014 - 14:03:09</li>
+                                                <li>
+                                                    <span>Unduh:</span>
+                                                    <a href="download/faridiotline.rar">faridiotline.rar (110 kb)</a>
+                                                </li>
+                                                <li><span>File:</span> <a href="#" class="delete">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <a href="#">Faridiot Line</a>
+                                            <ul class="nav">
+                                                <li><span>Oleh:</span> <a href="#">A. Farid Mubarok</a></li>
+                                                <li><span>Tanggal:</span> Mei 12, 2014 - 14:03:09</li>
+                                                <li>
+                                                    <span>Unduh:</span>
+                                                    <a href="download/faridiotline.rar">faridiotline.rar (110 kb)</a>
+                                                </li>
+                                                <li><span>File:</span> <a href="#" class="delete">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <a href="#">Faridiot Line</a>
+                                            <ul class="nav">
+                                                <li><span>Oleh:</span> <a href="#">A. Farid Mubarok</a></li>
+                                                <li><span>Tanggal:</span> Mei 12, 2014 - 14:03:09</li>
+                                                <li>
+                                                    <span>Unduh:</span>
+                                                    <a href="download/faridiotline.rar">faridiotline.rar (110 kb)</a>
+                                                </li>
+                                                <li><span>File:</span> <a href="#" class="delete">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                        <span>Tidak ada file unduhan</span>
+                                    </div>
+                                    <div class="ext-dropdown-footer">
+                                        <p>Copyright © 2014 Ahmad Farid Mubarok</p>
+                                    </div>
+                                </div>
+                            </div><!-- End .dropdown -->
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-default" data-toggle-sidebar="left">
+                                    <i class="fa fa-chevron-left"></i>
+                                </a>
+                                <a class="btn btn-default" href="#" id="lockscreen-slider-trigger" data-toggle-sidebar="left">
+                                    <i class="fa fa-lock"></i> Lock
+                                </a>
+                                <a href="#" class="btn btn-default" data-toggle-sidebar="right">
+                                    <i class="fa fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div><!-- End .inner-padding -->    
+            	</header><!-- End #header-sec --> 
+
+                <!-- ********************************************
+                     * WINDOW:                                  *
+                     *                                          *
+                     * the part which contains the main content *
+                     ******************************************** -->
+                                     
+                <div class="window">  
+                    <div class="actionbar">
+                        <div class="pull-left">
+                            <a href="#" class="btn small-toggle-btn"></a> 
+                            <a href="#" id="lockscreen-slider-trigger" class="btn">
+                                <i class="fa fa-lock"></i>&nbsp;  Terkunci
+                            </a>  
+                            <div class="dropdown">
+                                <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <img src="images/icons/flags/shiny/16/Indonesia.png" alt=""/>
+                                    <i class="fa fa-caret-down"></i>
+                                </a>
+                                <ul role="menu" class="dropdown-menu ext-flags">
+                                    <li>
+                                        <a href="#">Indonesia <img src="images/icons/flags/shiny/16/Indonesia.png" alt=""/></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">English <img src="images/icons/flags/shiny/16/United-Kingdom.png" alt=""/></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">German <img src="images/icons/flags/shiny/16/Germany.png" alt=""/></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">French <img src="images/icons/flags/shiny/16/France.png" alt=""/></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Chinees <img src="images/icons/flags/shiny/16/China.png" alt=""/></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p>Let's get creative!</p>
+                        </div> 
+                        <div class="pull-right">
+                            <a href="#" class="btn small-toggle-btn"></a>  
+                        </div>    
+                    </div><!-- End .actionbar-->
+                    <div class="row ext-raster">
+                    	<div class="col-sm-8">
+                            <div class="row ext-raster">
+
+                                <div class="col-sm-4">
+                                    <div class="inner-padding">
+                                        <div class="progress-project">
+                                                Indeks <span id="date_time"></span><script type="text/javascript"> window.onload = date_time('date_time');</script>
+                                            <div>
+                                                <span class="small" data-toggle-sidebar="left">Target : 90% (Lihat statistik)</span>
+                                            </div>
+                                        </div><!-- End .progress-project -->
+                                    </div><!-- End .inner-padding -->  
+                                </div>
+                                <span class="breakpoint-sm ext-raster-line-4"></span>
+                                <div class="col-sm-8">
+                                    <div class="grouped raster-4-blocks">
+                                        <div class="duo-val-block">
+                                            <span class="font-big timer" id="earth" data-from="3179" data-to="4502" data-speed="1000000"></span>
+                                            <span class="font-small">Klik</span>
+                                        </div><!-- End .duo-val-block -->
+                                        <div class="duo-val-block">
+                                            <span class="font-big timer" id="infinity" data-from="481" data-to="559" data-speed="400000"></span>
+                                            <span class="font-small">Online</span>
+                                        </div><!-- End .duo-val-block -->
+                                        <div class="duo-val-block">
+                                            <span class="font-big">1167</span>
+                                            <span class="font-small"><a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a></span>
+                                        </div><!-- End .duo-val-block -->
+                                        <div class="duo-val-block">
+                                            <span class="font-big">58</span>
+                                            <span class="font-small">Unduh</span>
+                                        </div><!-- End .duo-val-block -->
+                                    </div>                                              
+                                </div>
+                                <span class="ext-raster-line-bottom"></span>
+                            </div><!-- End .row -->
+                            <div class="row">
+                            	<div class="col-sm-12">
+
+                                    <div class="inner-padding">
+										<div class="spacer-20"></div>
+                                    	<div id="chart-mixed-1" style="width:100%; height:240px"></div>
+                                        <div class="spacer-20"></div>
+                                        <div class="subheading">
+                                            <h3>Ekspedisicandi.com, Dokumentasi Penjelajahan Tim Ekspedisi Candi Indonesia</h3><br/>
+                                            Berawal dari penjelajahan secara virtual terhadap candi-candi di Yogyakarta dan sekitarnya, Tim Ekspedisi Candi Indonesia mengumpulkan data berupa peta dan “petunjuk arah” dari layanan Peta Google. Tim lalu sadar, bahwa di Yogyakarta, khususnya Sleman, berlimpah peninggalan sejarah. Bahwa selain candi yang populer seperti Borobudur, Prambanan, dan Ratu Boko, terdapat candi-candi lain yang tidak kalah eksotis. Mulai dari candi-candi kecil yang letaknya di tangah sawah atau di tengah-tengah pemukiman penduduk, dari yang sudah dipugar maupun masih batu-batu yang berserakan, sampai candi yang letaknya di atas pegunungan. Informasi penting ini lalu disusun agar bisa dijelajahi satu-persatu. 
+
+                                <div class="spacer-30"></div>
+                                <form class="hidden-xs" hidden-sm>
+                                    <table class="table table-bordered table-striped table-form">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" class="th-square"><label><input type="checkbox" class="checkbox-master"/><span></span></label></th>
+                                                <th scope="col">Halaman Proyek</th>                                                 
+                                                <th scope="col">Penayangan</th>
+                                                <th scope="col" class="th-select2-tags">Label</th>
+                                                <th scope="col">Tindakan</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><label><input type="checkbox" /><span></span></label></td>                                            
+                                                <td><input type="text" value="Perkiraan Cuaca Yogyakarta" class="form-control"/></td>
+                                                <td>
+                                                	<div class="inline-labels">
+                                                        <label><input type="radio" name="rb1" checked><span></span> Yes</label>
+                                                        <label><input type="radio" name="rb1" value="option2"><span></span> No</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <input class="select-token" type="text" value="HTML5, Prototype, Usability"/> 
+                                                </td>
+                                                <td>
+                                                    <select class="form-control shortcut-menu">
+                                                        <option value="http://www.ekspedisicandi.com/id/edit">Edit</option>
+                                                        <option value="http://www.ekspedisicandi.com/id/cuaca/yogyakarta">Lihat Halaman Proyek</option>
+                                                        <option value="http://www.ekspedisicandi.com/id/iframe/cuaca-yogyakarta">Sumber HTML</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label><input type="checkbox" /><span></span></label></td>                                           
+                                                <td><input type="text" value="Database Candi Indoensia" class="form-control"/></td>
+                                                <td>
+                                                	<div class="inline-labels">
+                                                        <label><input type="radio" name="rb2" value="option1"><span></span> Ya</label>
+                                                        <label><input type="radio" name="rb2" value="option2" checked><span></span> Tidak</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <input class="select-token" type="text" value="Prototype, jQuery"/> 
+                                                </td>
+                                                <td>
+                                                    <select class="form-control shortcut-menu">
+                                                        <option value="http://www.ekspedisicandi.com/id/edit">Edit</option>
+                                                        <option value="http://www.ekspedisicandi.com/id/database">Lihat Halaman Proyek</option>
+                                                        <option value="http://www.ekspedisicandi.com/id/database">Sumber HTML</option>
+                                                    </select> 
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label><input type="checkbox" /><span></span></label></td>                                           
+                                                <td><input type="text" value="Petunjuk arah dari Yogyakarta ke Candi Prambanan" class="form-control"/></td>
+                                                <td>
+                                                	<div class="inline-labels">
+                                                        <label><input type="radio" name="rb3" value="option1" checked><span></span> Ya</label>
+                                                        <label><input type="radio" name="rb3" value="option2"><span></span> Tidak</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <input class="select-token" type="text" value="HTML5, CSS3, Angularjs"/> 
+                                                </td>
+                                                <td>
+                                                    <select class="form-control shortcut-menu">
+                                                        <option value="http://www.ekspedisicandi.com/id/edit">Edit</option>
+                                                        <option value="http://www.ekspedisicandi.com/id/arah/yogyakarta-prambanan">Lihat Halaman Proyek</option>
+                                                        <option value="http://www.ekspedisicandi.com/id/iframe/yogyakarta-prambanan">Sumber HTML</option>
+                                                    </select> 
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label><input type="checkbox" /><span></span></label></td>                                           
+                                                <td><input type="text" value="Street View Candi Prambanan" class="form-control"/></td>
+                                                <td>
+                                                	<div class="inline-labels">
+                                                        <label><input type="radio" name="rb4" value="option1" checked><span></span> Ya</label>
+                                                        <label><input type="radio" name="rb4" value="option2"><span></span> Tidak</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <input class="select-token" type="text" value="Blog, Minimal, CS6"/> 
+                                                </td>
+                                                <td>
+                                                    <select class="form-control shortcut-menu">
+                                                        <option value="http://www.ekspedisicandi.com/id/edit">Edit</option>
+                                                        <option value="http://www.ekspedisicandi.com/id/panorama/prambanan">Lihat Halaman Proyek</option>
+                                                        <option value="http://www.ekspedisicandi.com/id/iframe/panorama-prambanan">Sumber HTML</option>
+                                                    </select> 
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label><input type="checkbox" /><span></span></label></td>                                           
+                                                <td><input type="text" value="Video Candi Sukuh" class="form-control"/></td>
+                                                <td>
+                                                	<div class="inline-labels">
+                                                        <label><input type="radio" name="rb5" value="option1"><span></span> Ya</label>
+                                                        <label><input type="radio" name="rb5" value="option2" checked><span></span> Tidak</label>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <input class="select-token" type="text" value="video, aerial"/> 
+                                                </td>
+                                                <td>
+                                                    <select class="form-control shortcut-menu">
+                                                        <option value="http://www.ekspedisicandi.com/id/edit">Edit</option>
+                                                        <option value="http://www.ekspedisicandi.com/id/video/sukuh">Lihat Halaman Proyek</option>
+                                                        <option value="http://www.ekspedisicandi.com/id/iframe/video-sukuh">Sumber HTML</option>
+                                                    </select> 
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td colspan="5">
+                                                    <div class="pull-left">
+                                                        Copyright <img src="images/faridiot.png"> All Right Reserved.
+                                                    </div>
+                                                    <div class="pull-right">
+                                                        <button type="submit" class="btn btn-default">Reset</button>
+                                                        <button type="submit" class="btn btn-primary">Save</button>
+                                                    </div>  
+                                                </td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </form>
+
+                                        </div>
+
+         								<div class="row">
+                                
+                                            <!-- Start grid -->
+                                            
+                                            <section class="col-sm-12">
+                                                                                
+                                                <!-- New widget -->
+
+                        <div class="subheading">
+                            <p>Dengan CSS3, kita tidak perlu lagi Flash untuk membuat animasi berbasis web. CSS3 terbaru telah membuka banyak jalan untuk desainer dan pengembang web. Sekarang memungkinkan untuk membuat animasi dan interaktivitas sepenuhnya dalam markup CSS, tanpa perlu lagi plugin pihak ketiga seperti Flash, Silverlight atau After Effects. Baca selengkapnya</p>
+                        </div>
+                        <div class="filter-bar" id="filter-2">
+                            <div class="pull-left">
+                                <ul class="filters">
+                                    <li>
+                                        <a href="javascript:void(0)" class="filter active" data-filter="all">All</a>
+                                    </li>
+                                    <li>/</li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="filter" data-filter="filter-text">Articles</a>
+                                    </li>
+                                    <li>/</li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="filter" data-filter="filter-sv">Street View</a>
+                                    </li>
+                                    <li>/</li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="filter" data-filter="filter-maps">Maps</a>
+                                    </li>
+                                    <li>/</li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="filter" data-filter="filter-vids">Video</a>
+                                    </li>
+                                </ul>
+                                <div class="filter-found"></div>
+                            </div>
+                            <div class="pull-right">
+                                <ul class="filters">
+                                    <li>
+                                        <a href="javascript:void(0)" class="sort" data-sort="data-id" data-order="asc">asc</a>
+                                    </li>
+                                    <li>/</li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="sort active" data-sort="data-id" data-order="desc">desc</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="thumbs-list">
+                            <ul id="mix-2">
+                                <li class="mix filter-vids" data-id="4">
+                                    <a href="http://www.ekspedisicandi.com/id/video/sukuh" title="Jadwal Imsakiyah Ramadhan 1434 H">
+                                        <img src="images/gallery/95x95/sukuh.vids.small.thumb.jpg" alt=""/>
+                                    </a>
+                                    <div class="thumb-label">Sukuh</div>
+                                </li>
+                                <li class="mix filter-text" data-id="20">
+                                    <a href="http://www.ekspedisicandi.com/id/sewu" title="Suku Bangsa di Indonesia. Visit project in http://faridiot.com/showcase/suku-indonesia">
+                                        <img src="images/gallery/95x95/ijo.text.small.thumb.jpg" alt=""/>
+                                    </a>
+                                    <div class="thumb-label">Ijo</div>
+                                </li>
+                                <li class="mix filter-vids" data-id="22">
+                                    <a href="http://www.ekspedisicandi.com/id/video/ratuboko" title="Kampanye Partai Besar Indonesia. Lihat video di http://www.youtube.com/watch?v=02UEMXz3FhI">
+                                        <img src="images/gallery/95x95/ratuboko.vids.small.thumb.jpg" alt=""/>
+                                    </a>
+                                    <div class="thumb-label">Ratu Boko</div>
+                                </li>
+                                <li class="mix filter-text" data-id="5">
+                                    <a href="http://www.ekspedisicandi.com/id/borobudur" title="Logo UKSH">
+                                        <img src="images/gallery/95x95/borobudur.text.small.thumb.jpg" alt=""/>
+                                    </a>
+                                    <div class="thumb-label">Borobudur</div> 
+                                </li>
+                                <li class="mix filter-sv" data-id="1">
+                                    <a href="http://www.ekspedisicandi.com/id/panorama/ratuboko" title="Touch, Drag, Click me">
+                                        <img src="images/gallery/95x95/ratuboko.sv.small.thumb.jpg" alt=""/>
+                                    </a>
+                                    <div class="thumb-label">Ratu Boko</div>
+                                </li>
+
+                                <li class="mix filter-text" data-id="3">
+                                    <a href="http://www.ekspedisicandi.com/id/prambanan" title="Penun Tombol-tombol">
+                                        <img src="images/gallery/95x95/prambanan.text.small.thumb.jpg" alt=""/>
+                                    </a>
+                                    <div class="thumb-label">Prambanan</div> 
+                                </li>
+                                <li class="mix filter-text" data-id="10">
+                                    <a href="http://www.ekspedisicandi.com/id/sambisari" title="Gear. Visit project in http://faridiot.com/showcase/spritely/gear.html">
+                                        <img src="images/gallery/95x95/sambisari.text.small.thumb.jpg" alt=""/>
+                                    </a>
+                                    <div class="thumb-label">Sambisari</div>
+                                </li>
+                                <li class="mix filter-vids" data-id="4">
+                                    <a href="http://www.ekspedisicandi.com/id/video/prambanan" title="Jadwal Imsakiyah Ramadhan 1434 H">
+                                        <img src="images/gallery/95x95/prambanan.vids.small.thumb.jpg" alt=""/>
+                                    </a>
+                                    <div class="thumb-label">Prambanan</div>
+                                </li>
+                                <li class="mix filter-sv" data-id="12">
+                                    <a href="http://www.ekspedisicandi.com/id/panorama/barong" title="Dua Wajah Islam. Visit project in http://faridiot.com/showcase/dua/index.html">
+                                        <img src="images/gallery/95x95/barong.sv.small.thumb.jpg" alt=""/>
+                                    </a>
+                                    <div class="thumb-label">Barong</div>
+                                </li>
+                                <li class="mix filter-maps" data-id="21">
+                                    <a href="http://www.ekspedisicandi.com/id/peta/satelit/ijo" title="Kampanye Partai Besar Indonesia. Lihat video di http://www.youtube.com/watch?v=VeYb_AbMqM0">
+                                        <img src="images/gallery/95x95/ijo.maps.small.thumb.jpg" alt=""/>
+                                    </a>
+                                    <div class="thumb-label">Ijo</div>
+                                </li>
+                                <li class="mix filter-sv" data-id="6">
+                                    <a href="http://www.ekspedisicandi.com/id/panorama/borobudur" title="Logo UKSH">
+                                        <img src="images/gallery/95x95/borobudur.sv.small.thumb.jpg" alt=""/>
+                                    </a>
+                                    <div class="thumb-label">Borobudur</div>
+                                </li>
+
+                                <li class="mix filter-sv" data-id="8">
+                                    <a href="http://www.ekspedisicandi.com/id/panorama/sambisari" title="Mujahadah Dzikrul Ghafilin Portrait">
+                                        <img src="images/gallery/95x95/sambisari.sv.small.thumb.jpg" alt=""/>
+                                    </a>
+                                    <div class="thumb-label">Sambisari</div>
+                                </li>
+                                <li class="mix filter-vids" data-id="9">
+                                    <a href="http://www.ekspedisicandi.com/id/video/sambisari" title="Mujahadah Dzikrul Ghafilin Landscape">
+                                        <img src="images/gallery/95x95/sambisari.vids.small.thumb.jpg" alt=""/>
+                                    </a>
+                                    <div class="thumb-label">Sambisari</div> 
+                                </li>
+
+                                <li class="mix filter-text" data-id="11">
+                                    <a href="http://www.ekspedisicandi.com/id/barong" title="Jalan-jalan Keliling Jogja. Visit project in http://faridiot.com/showcase/spritely/jogja.html">
+                                        <img src="images/gallery/95x95/barong.text.small.thumb.jpg" alt=""/>
+                                    </a>
+                                    <div class="thumb-label">Barong</div> 
+                                </li>
+
+
+                                <li class="mix filter-maps" data-id="7">
+                                    <a href="http://www.ekspedisicandi.com/id/peta/satelit/borobudur" title="Kalender Wahid Hasyim 2014">
+                                        <img src="images/gallery/95x95/borobudur.maps.small.thumb.jpg" alt=""/>
+                                    </a>
+                                    <div class="thumb-label">Borobudur</div> 
+                                </li>
+                                <li class="mix filter-text" data-id="14">
+                                    <a href="http://www.ekspedisicandi.com/id/sewu" class="lightbox" title="Pluralitas. Visit project in http://faridiot.com/showcase/threejs/index.html">
+                                        <img src="images/gallery/95x95/sewu.text.small.thumb.jpg" alt=""/>
+                                    </a>
+                                    <div class="thumb-label">Sewu</div>
+                                </li>
+                                <li class="mix filter-vids" data-id="15">
+                                    <a href="http://www.ekspedisicandi.com/id/video/banyunibo" title="Hujan Salju. Visit project in http://faridiot.com/showcase/spritely/pocong.html">
+                                        <img src="images/gallery/95x95/banyunibo.vids.small.thumb.jpg" alt=""/>
+                                    </a>
+                                    <div class="thumb-label">Banyunibo</div>
+                                </li>
+                                <li class="mix filter-sv" data-id="2">
+                                    <a href="http://www.ekspedisicandi.com/id/panorama/prambanan" title="Mainkan Telurku">
+                                        <img src="images/gallery/95x95/prambanan.sv.small.thumb.jpg" alt=""/>
+                                    </a>
+                                    <div class="thumb-label">Prambanan</div>
+                                </li>
+                                <li class="mix filter-maps" data-id="13">
+                                     <a href="http://www.ekspedisicandi.com/id/peta/satelit/barong" title="Pocong. Visit project in http://faridiot.com/showcase/pocong">
+                                        <img src="images/gallery/95x95/barong.maps.small.thumb.jpg" alt=""/>
+                                    </a>
+                                    <div class="thumb-label">Barong</div> 
+                                </li>
+                                <li class="mix filter-maps" data-id="15">
+                                    <a href="http://www.ekspedisicandi.com/id/peta/satelit/banyunibo" title="Hujan Salju. Visit project in http://faridiot.com/showcase/spritely/pocong.html">
+                                        <img src="images/gallery/95x95/banyunibo.maps.small.thumb.jpg" alt=""/>
+                                    </a>
+                                    <div class="thumb-label">Banyunibo</div>
+                                </li>
+                            </ul>
+                        </div><!-- End .thumbs-list --> 
+
+                        <div class="spacer-40"></div> 
+
+                                            </section>
+                                        </div>
+                                        
+                                        <div class="hr-totop"><span>Top</span></div>
+                                        <div class="spacer-10"></div>
+                                        Web ini berinovasi setiap hari, menyederhanakan sebuah konsep agar dapat dipahami dengan mudah dengan mengilustrasikannya sampai batas-batas dimana bangunan website secara keseluruhan (tidak hanya teks) dapat dimanfaatkan untuk menyalurkan ide atau gagasan. Dan di Jogja +F kami selalu mencari pikiran kreatif untuk bergabung dengan kami, menulis untuk dibagikan, mengeksplorasi, dan terlibat ... Jadi, jika kamu ingin menjadi bagian dari Jogja +F, silahkan hubungi kami!
+                                    </div><!-- End .inner-padding -->  
+                                </div>
+                            </div><!-- End .row -->
+                        </div>
+                        <span class="breakpoint-sm ext-raster-line-8"></span>
+                        <div class="col-sm-4 hidden-xs">
+                            <ul class="ext-tabs tabs-negative-position">
+                                <li class="active">
+                                    <a href="#content-tab-10">Kronologi</a>
+                                </li>
+                                <li>
+                                    <a href="#content-tab-11">Formulir Proyek</a>
+                                </li>
+                            </ul><!-- End .ext-tabs -->
+                            <div class="tab-content">
+                                <div id="content-tab-10" class="tab-pane active">
+                                    <div class="inner-padding">
+                                        <div class="subheading">
+                                            <h3>Aktivitas Terbaru</h3>
+                                            <div class="btn-group pull-right">
+                                                <a href="#" class="btn btn-default btn-sm tooltip-top" title="Show less" id="as-min-trigger">
+                                                    <i class="fa fa-th-large"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-default btn-sm active tooltip-top" title="Show more" id="as-plus-trigger">
+                                                    <i class="fa fa-bars"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="activity-stream">
+
+                                            <div class="activity-stream-item" id="as-item-2">
+                                                <img src="images/users/farid.jpg" alt="" class="avatar" />
+                                                <div class="activity-stream-content">
+                                                    <div class="activity-stream-user">
+                                                        <a href="#" class="bold">A. Farid Mubarok</a> <span class="busy-dot"></span> <small class="text-muted pull-right">1 menit yang lalu</small>
+                                                    </div>
+                                                    <div class="activity-stream-title">
+                                                        Mengirim pesan di dinding.
+                                                    </div>
+                                                    <div class="activity-stream-sub">
+                                                        <a href="showcase/googlewebdesigner/pocong"><img src="images/upload/pocong_s.gif" width="100%"></a>
+                                                        <i>never tired of jumping...</i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="activity-stream-item" id="as-item-1">
+                                                <img src="images/users/farid.jpg" alt="" class="avatar" />
+                                                <div class="activity-stream-content">
+                                                    <div class="activity-stream-user">
+                                                        <a href="#" class="bold">A. Farid Mubarok</a> <span class="online-dot"></span> <small class="text-muted pull-right">21 menit yang lalu</small>
+                                                    </div>
+                                                    <div class="activity-stream-title">
+                                                        <a href="showcase/mobile">Cek disini faridiot.com, 100 % responsive!</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="activity-stream-item">
+                                                <img src="images/users/farid.jpg" alt="" class="avatar" />
+                                                <div class="activity-stream-content">
+                                                    <div class="activity-stream-user">
+                                                        <a href="#" class="bold">A. Farid Mubarok</a> <span class="label label-warning">Comment</span> <small class="text-muted pull-right">27 menit yang lalu</small>
+                                                    </div>
+                                                    <div class="activity-stream-title">
+                                                        Mengirimkan komentar di <a href="http://www.imdb.com/title/tt1602620/" class="highlight-link">forum</a>.
+                                                    </div>
+                                                    <div class="activity-stream-sub">
+                                                        <p><img src="images/upload/html5.png" align="left"></p>
+                                                        <div class="spacer-10"></div>
+                                                        <p>HTML5 + CSS3 + Javascript, kombinasi sempurna untuk membangun web modern yang responsif</p>
+                                                        <div class="spacer-20"></div>
+                                                        <textarea class="auto-expand form-control noresizing" name="" placeholder="komentar..." data-autoexpand-size="100"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="activity-stream-item">
+                                                <img src="images/users/farid.jpg" alt="" class="avatar" />
+                                                <div class="activity-stream-content">
+                                                    <div class="activity-stream-user">
+                                                        <a href="#" class="bold">A. Farid Mubarok</a> <small class="text-muted pull-right">44 menit yang lalu</small>
+                                                    </div>
+                                                    <div class="activity-stream-title">
+                                                        Menambahkan halaman meintenance: [<a href="makeover.html" class="underline">Getting a Makeover</a>]
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="activity-stream-item">
+                                                <img src="images/users/farid.jpg" alt="" class="avatar" />
+                                                <div class="activity-stream-content">
+                                                    <div class="activity-stream-user">
+                                                        <a href="#" class="bold">A. Farid Mubarok</a> <small class="text-muted pull-right">46 menit yang lalu</small>
+                                                    </div>
+                                                    <div class="activity-stream-title">
+                                                        Telah memposting sebuah video baru.
+                                                    </div>
+                                                    <div class="activity-stream-sub">
+                                                        <div class="video-container">
+                                                            <iframe width="560" height="315" src="//www.youtube.com/embed/Xm5i5kbIXzc" frameborder="0" allowfullscreen></iframe>
+                                                        </div><!-- End .video-container -->
+                                                        <i>the web is our largest shared resource, let's keep it free and open for us, and for the next generation,</i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="activity-stream-item">
+                                                <img src="images/users/farid.jpg" alt="" class="avatar" />
+                                                <div class="activity-stream-content">
+                                                    <div class="activity-stream-user">
+                                                        <a href="#" class="bold">A. Farid Mubarok</a> <span class="offline-dot"></span> <small class="text-muted pull-right">1 jam yang lalu</small>
+                                                    </div>
+                                                    <div class="activity-stream-title">
+                                                        Posted a quote.
+                                                    </div>
+                                                    <div class="activity-stream-sub">
+                                                        <blockquote class="pull-right">
+                                                            <p>Jogja +F Labs Experiments, responsive-web Designer dari Yogyakarta, Indonesia</p>
+                                                            <small>kunjungi official website <cite title="Source Title">faridiot.com</cite></small>
+                                                        </blockquote>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="activity-stream-item">
+                                                <img src="images/users/farid.jpg" alt="" class="avatar" />
+                                                <div class="activity-stream-content">
+                                                    <div class="activity-stream-user">
+                                                        <a href="#" class="bold">A. Farid Mubarok</a> <small class="text-muted pull-right">1 jam yang lalu</small>
+                                                    </div>
+                                                    <div class="activity-stream-title">
+                                                        Mengirimkan komentar di forum.
+                                                        <div class="spacer"></div>
+                                                        <a href="http://en.wikipedia.org/wiki/List_of_Academy_Award_winners_and_nominees_for_Best_Foreign_Language_Film" class="highlight-link">This List of Academy Award winners and nominees for Best Foreign Language Film</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="activity-stream-item">
+                                                <img src="images/users/farid.jpg" alt="" class="avatar" />
+                                                <div class="activity-stream-content">
+                                                    <div class="activity-stream-user">
+                                                        <a href="#" class="bold">A. Farid Mubarok</a> <small class="text-muted pull-right">2 jam yang lalu</small>
+                                                    </div>
+                                                    <div class="activity-stream-title">
+                                                        Mengubah informasi akunnya.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!-- End .activity-stream -->
+                                    </div><!-- End .inner-padding -->
+                                    <!-- Lockscreen -->
+                                    <div class="lockscreen" id="lockscreen-target">
+                                        <div class="lockscreen-overlay"></div>
+                                        <div class="lockscreen-modal">
+                                            <div class="lockscreen-placeholder"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="content-tab-11" class="tab-pane">
+                                    <div class="inner-padding">
+                                        <div class="subheading">
+                                            <h3>Buat Proyek Baru</h3>
+                                        </div>
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <label for="ff-0">Nama Proyek: <span class="asterisk">*</span></label>
+                                                    <input type="text" class="form-control" placeholder="projectX" id="ff-0" />
+                                                </div>
+                                            </div>
+                                            <div class="spacer-20"></div>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <label for="ff-1">URL proyek:</label>
+                                                    <div class="input-group">
+                                                        <input class="form-control" type="text" placeholder="direktori" id="ff-1" />
+                                                        <span class="input-group-addon">.faridiot.com</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="spacer-20"></div>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <label for="ff-2">Label (pisahkan dengan koma):</label>
+                                                    <input type="text" class="form-control input-lg" placeholder="Label" id="ff-2" />
+                                                    <div class="helper-text-box">
+                                                        <p>
+                                                            Contoh: html5, prototip, mobile.
+                                                        </p>
+                                                    </div><!-- End .helper-text-box -->
+                                                </div>
+                                            </div>
+                                            <div class="spacer-10"></div>
+                                            <fieldset>
+                                                <legend>Checkbox</legend>
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <div class="stacked-labels">
+                                                            <label><input type="checkbox" name="tags" value="html5" /><span></span> HTML5</label>
+                                                            <label><input type="checkbox" name="tags" value="css3" /><span></span> CSS3</label>
+                                                            <label><input type="checkbox" name="tags" value="css3" /><span></span> Javascript</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="stacked-labels">
+                                                            <label><input type="checkbox" name="tags" value="html5" /><span></span> Database</label>
+                                                            <label><input type="checkbox" name="tags" value="css3" /><span></span> WebGL</label>
+                                                            <label><input type="checkbox" name="tags" value="css3" /><span></span> Other</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                            <div class="spacer-20"></div>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <label for="ff-2">Apakah Responsif dan dukungan mobile?</label>
+                                                    <select name="client" required class="form-control simpleselect">
+                                                        <option value="">-- Pilih Opsi --</option>
+                                                        <option value="yes">Yes</option>
+                                                        <option value="no">No</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="spacer-20"></div>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <label for="ff-2">Target untuk:</label>
+                                                    <div class="inline-labels">
+                                                        <label><input type="radio" name="gender" value="male" checked /><span></span> Laki-laki</label>
+                                                        <label><input type="radio" name="gender" value="female" /><span></span> Perempuan</label>
+                                                        <label><input type="radio" name="gender" value="all" /><span></span> Semua</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="spacer-20"></div>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <label for="ff-2">Deskripi:</label>
+                                                    <textarea class="form-control" placeholder="deskripsi"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="spacer-20"></div>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <label><input type="checkbox" /><span></span> Terima persyaratan?</label>
+                                                    <button class="btn btn-default pull-right" type="submit">Kirim</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div><!-- End .inner-padding -->
+                                </div>
+                            </div>
+
+                        </div>
+                        <span class="ext-raster-line-bottom"></span>
+                    </div>
+      				<div class="inner-padding">
+                        <div class="row"> 
+                            <div class="col-sm-12">
+
+	    	<div class="galleryItem">
+	    		<a href="http://www.ekspedisicandi.com"><img src="images/upload/ekspedisicandi.jpg" alt="" /></a>
+	    		<h3>Ekspedisicandi</h3>
+	    		<p>Dokumentasi perjalanan Tim Ekspedisi Candi Indonesia. Mulai Ekspedisimu sekarang!</p>
+	    	</div>
+            
+	    	<div class="galleryItem">
+	    		<a href="http://lentera.ppwahidhasyim.com"><img src="images/upload/lenteramahad.jpg" alt="" /></a>
+	    		<h3>Lentera Ma'had</h3>
+	    		<p>SOCIAL BLOGGING. Media Keilmuan Madrasah Diniyah Wahid Hasyim. Daftar dan mulai menulis!</p>
+	    	</div>
+                                
+            <div class="galleryItem">
+	    		<a href="http://design.faridiot.com"><img src="images/icons/design.png" alt="" /></a>
+	    		<h3>Design</h3>
+	    		<p>OFFICIAL BLOG DESAIN. Showcase project desain, free stuff, dan informasi tentang desain.</p>
+	    	</div>
+	    	
+	    	<div class="galleryItem">
+	    		<a href="http://facebook.com/faridiot"><img src="images/icons/facebook.png" alt="" /></a>
+	    		<h3>Facebook</h3>
+	    		<p>Official Facebook Account. Menjadi teman dan like fanpage kami untuk tetap terhubung.</p>
+	    	</div>
+	    	
+	    	<div class="galleryItem">
+	    		<a href="http://twitter.com/faridiot"><img src="images/icons/twitter.jpg" alt="" /></a>
+	    		<h3>Twitter</h3>
+	    		<p>Official Twitter Account. Follow untuk mendapatkan informasi yang menarik lainnya.</p>
+	    	</div>
+	    	
+            <div class="galleryItem">
+	    		<a href="http://view.faridiot.com"><img src="images/upload/madin.jpg" alt="" /></a>
+	    		<h3>Madin</h3>
+	    		<p>Official Website Madrasah Diniyah Wahid Hasyim</p>
+	    	</div>
+	    	
+            <div class="galleryItem">
+	    		<a href="http://notes.faridiot.com"><img src="images/upload/ppwahidhasyim.jpg" alt="" /></a>
+	    		<h3>ppwahidhasyim</h3>
+	    		<p>Official Website Wahid Hasyim Yogyakarta</p>
+	    	</div>
+	    	
+	    	<div class="galleryItem">
+	    		<a href="projectX"><img src="images/icons/x-files.jpg" alt="" /></a>
+	    		<h3>ProjectX</h3>
+	    		<p>ProjectX kami. Membangun hal yang menakjubkan bersama.</p>
+	    	</div>
+	    	
+	    	<div class="galleryItem">
+	    		<a href="http://youtube.com/faridiotHD"><img src="images/icons/youtube.png" alt="" /></a>
+	    		<h3>Youtube</h3>
+	    		<p>Official Kanal Youtube. Temukan konten video dari kami.</p>
+	    	</div>
+	    	
+            <div class="galleryItem">
+	    		<a href="http://github.com/faridiot"><img src="images/icons/github.jpg" alt="" /></a>
+	    		<h3>GitHub</h3>
+	    		<p>Fork repository kami di GitHub.</p>
+	    	</div>
+
+                            </div>
                         </div>
                     </div>
-                </article>
+                </div><!-- End .window -->
+                
+                <!-- ********************************************
+                     * FOOTER MAIN:                             *
+                     *                                          *
+                     * the part which contains things like      * 
+                     * chat, buttons, copyright and             *
+                     * dropup menu(s).                          *
+                     ******************************************** -->
+                    
+                <footer id="footer-main" class="footer-sticky">
+                    <div class="footer-main-inner">
+                        <div class="pull-left">
+                            <p>Copyright © 2014 Ahmad Farid Mubarok</p>
                         </div>
-            <!-- content-wrapper -->
-        </div>
-        <!-- content-scroller -->
-        </div>
-            <script type="text/javascript">
-jQuery(document).ready(function($) {
-	"use strict";
-		var Page	= (function() {
-		var $container			= $( '#container' ),
-			// the scroll container that wraps the articles
-			$scroller			= $container.find( 'div.content-scroller' ),
-			$menu				= $container.find( 'aside' ),
-			// menu links
-			$links				= $menu.find( 'nav a.pluton-menu' ),
-			$articles			= $container.find( 'div.content-wrapper > article' ).not(".noscroll"),
+                        <div class="pull-right">
+                            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="fa fa-cogs"></i>
+                            </a>                            
+                            <div class="dropup" id="ext-dropdown-chat">
+                                <a class="btn dropdown-toggle ext-dropdown-chat-btn" data-toggle="dropdown" href="#">
+                                    <span class="online-dot"></span>
+                                    A. Farid Mubarok
+                                    <i class="fa fa-comments chat-blink-icon"></i>
+                                </a>                  
+                                <div class="ext-dropdown-chat dropdown-menu pull-right">
+                                    <div class="ext-dropdown-chat-inner">
+                                        <div class="ext-dropdown-header">
+                                            <i class="fa fa-comments"></i>
+                                            <h5>Pesan langsung</h5>
+                                            <a href="#" class="btn btn-default btn-sm ext-dropdown-chat-info-toggle">
+                                                <i class="fa fa-info-circle"></i>
+                                            </a>                            
+                                        </div>
+                                        <div class="ext-dropdown-chat-window scrollbar-y">
+                                            <div class="ext-dropdown-chat-msg">
+                                                <div class="seperator"><span>13/05/14</span></div>
+                                            </div>
+                                            <div class="ext-dropdown-chat-msg">
+                                                <div class="ext-dropdown-chat-avatar">
+                                                    <img src="images/users/sandara.jpg" alt=""/>
+                                                </div>
+                                                <div class="ext-dropdown-chat-user">
+                                                    <strong>Sandara Park:</strong>
+                                                    <span>11:49</span>
+                                                    <p>He, ada orag disini...</p>
+                                                </div>
+                                            </div>
+                                            <div class="ext-dropdown-chat-msg">
+                                                <div class="ext-dropdown-chat-avatar">
+                                                    <img src="images/users/farid.jpg" alt=""/>
+                                                </div>
+                                                <div class="ext-dropdown-chat-user">
+                                                    <strong>A. Farid Mubarok:</strong>
+                                                    <span>11:53</span>
+                                                    <p>Ya, aku...</p>
+                                                </div>
+                                            </div>                                 
+                                            <div class="ext-dropdown-chat-msg">
+                                                <div class="ext-dropdown-chat-avatar">
+                                                    <img src="images/users/farid.jpg" alt=""/>
+                                                </div>
+                                                <div class="ext-dropdown-chat-user">
+                                                    <strong>A. Farid Mubarok:</strong>
+                                                    <span>11:54</span>
+                                                    <p>...hampir tertidur. Ingin membangunkan aku?</p>
+                                                </div>
+                                            </div>  
+                                            <div class="ext-dropdown-chat-msg">
+                                                <div class="ext-dropdown-chat-avatar">
+                                                    <img src="images/users/sandara.jpg" alt=""/>
+                                                </div>
+                                                <div class="ext-dropdown-chat-user">
+                                                    <strong>Sandara Park:</strong>
+                                                    <span>11:56</span>
+                                                    <p>Ya, maaf mengganggu, jangan lupa untuk menambahkan beberapa foto  <a href="projectX">disini</a>.</p>
+                                                </div>
+                                            </div>
+                                            <div class="ext-dropdown-chat-msg">
+                                                <div class="ext-dropdown-chat-avatar">
+                                                    <img src="images/users/farid.jpg" alt=""/>
+                                                </div>
+                                                <div class="ext-dropdown-chat-user">
+                                                    <strong>A. Farid Mubarok:</strong>
+                                                    <span>11:59</span>
+                                                    <p>Oke, tidak ada masalah, aku juga belum mengetik blog untuk hari ini.</p>
+                                                </div>
+                                            </div>
+                                            <div class="ext-dropdown-chat-msg">
+                                                <div class="seperator"><span>13/05/14</span></div>
+                                            </div>
+                                            <div class="ext-dropdown-chat-msg">
+                                                <div class="ext-dropdown-chat-avatar">
+                                                    <img src="images/users/sandara.jpg" alt=""/>
+                                                </div>
+                                                <div class="ext-dropdown-chat-user">
+                                                    <strong>Sandara Park:</strong>
+                                                    <span>00:01</span>
+                                                    <p>Baiklah, selamat malam.</p>
+                                                </div>
+                                            </div>
+                                            <div class="ext-dropdown-chat-msg">
+                                                <div class="ext-dropdown-chat-avatar">
+                                                    <img src="images/users/farid.jpg" alt=""/>
+                                                </div>
+                                                <div class="ext-dropdown-chat-user">
+                                                    <strong>Steven:</strong>
+                                                    <span>01:58</span>
+                                                    <p>Ya,</p>
+                                                </div>
+                                            </div>                       
+                                        </div>
+                                        <div class="ext-dropdown-chat-editor">
+                                            <textarea name="" class="form-control" placeholder="Ketik pesan Anda di sini ..."></textarea>
+                                        </div>
+                                        <div class="ext-dropdown-chat-info">
+                                            <h5>Jogja +F Chat. Everywhere.</h5>
+                                            <div class="spacer-15"></div>
+                                            <p>
+                                            Chat dengan teman-teman Jogja +F Web Designer dari desktop. Gabung dengan jaringan desainer jogja dan teman-teman kreatif di Jogja +F Labs Experiments, berbagi ide, dan menciptakan hal-hal yang menakjubkan. Mengambangkan ide dari hal kecil dan sederhana bersama-sama.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- End .dropup -->              
+                            <a href="#" class="btn" id="toggle-footer">
+                                <i class="fa fa-chevron-down"></i>
+                            </a>
+                        </div> 
+                    </div><!-- End .footer-main-inner -->   
+                </footer><!-- End #footer-main -->  
+            </div><!-- End #content -->  
+    	</div><!-- End #main --> 
+    </div><!-- End #container --> 
+    
 
-			// button to scroll to the top of the page
-			// only shown when screen size < 715
-			$toTop				= $container.find( 'a.totop-link' ),
-			// the browser nhistory object
-			History 			= window.History,
-			// animation options
-			animation			= { speed : 800, easing : 'easeInOutExpo' },
-			// jScrollPane options
-			scrollOptions		= { verticalGutter : 0, hideFocus : true },
-			// init function
-			init				= function() {
-				// initialize the jScrollPane on both the menu and articles
-				_initCustomScroll();
-				// initialize some events
-				_initEvents();
-				// sets some css properties 
-				_layout();
-				// jumps to the respective chapter
-				// according to the url
-				_goto();
+     
 
-			},
-			_initCustomScroll	= function() {
 
-				// Only add custom scroll to articles if screen size > 715.
-				// If not the articles will be expanded
-				if( $(window).width() > 767 ) {
+    <!-- // Helpers // -->
+    
+    <script src="js/plugins/modernizr.min.js"></script> 
+    <script src="js/plugins/mobiledevices.js"></script>
+    
+    <!-- // jQuery core // -->
+    
+    <script src="js/libs/jquery-1.11.0.min.js"></script>
+    <script src="js/libs/jquery-ui-1.10.4.min.js"></script>
+    
+    <!-- // Bootstrap // -->
+    
+    <script src="bootstrap/core/dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap/select2/select2.min.js"></script>
+	<script src="bootstrap/bootboxjs/bootboxjs.min.js"></script>
+    <script src="bootstrap/holder/holder.min.js"></script>
+    <script src="bootstrap/typeahead/typeahead.min.js"></script>
+	<script src="bootstrap/datepicker/js/bootstrap-datepicker.min.js"></script>
+	<script src="bootstrap/fileupload/bootstrap-fileupload.min.js"></script>
+	<script src="bootstrap/inputmask/bootstrap-inputmask.min.js"></script>
+    <script src="bootstrap/colorpicker/js/bootstrap-colorpicker.min.js"></script>
+    <script src="bootstrap/timepicker/js/bootstrap-timepicker.min.js"></script>
+    
+    <!-- // Custom/premium plugins // -->
+    
+    <script src="js/plugins/responsivetables.1.0.min.js"></script> 
+    <script src="js/plugins/responsivehelper.1.0.min.js"></script>  
+    <script src="js/plugins/mainmenu.1.0.min.js"></script>
+    <script src="js/plugins/easyfiletree.1.0.min.js"></script> 
+  	<script src="js/plugins/autosaveforms.1.0.min.js"></script> 
+    <script src="js/plugins/chainedinputs.1.0.min.js"></script>
+	<script src="js/plugins/checkboxtoggle.1.0.min.js"></script> 
+    <script src="js/plugins/bootstraptabsextend.1.0.min.js"></script>
+    <script src="js/plugins/lockscreen.1.0.min.js"></script>
+    <script src="js/plugins/autoexpand.1.0.min.js"></script>
+    <script src="js/plugins/notify.1.0.min.js"></script>
+ 	<script src="js/plugins/nanogress.1.0.min.js"></script>
+    <script src="js/plugins/powerwizard.1.0.min.js"></script>
+    <script src="js/plugins/simpleselect.1.0.min.js"></script>
+    <script src="js/plugins/tinycontextmenu.1.0.min.js"></script>
+      
+    <!-- // Third-party plugins // -->
+    
+    <script src="js/plugins/tinyscrollbar.min.js"></script>  
+    <script src="js/plugins/jquery.knob.js"></script> 
+    <script src="js/plugins/prism.min.js"></script>            
+    <script src="js/plugins/h5f.min.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false&amp;language=en"></script>
+    <script src="js/plugins/gmap3.min.js"></script>
+    <script src="js/plugins/jquery.tablesorter.min.js"></script>
+    <script src="js/plugins/jquery.tablesorter.widgets.min.js"></script>
+    <script src="js/plugins/jquery.tablesorter.pager.min.js"></script>
+    <script src="js/plugins/fullcalendar.min.js"></script>
+    <script src="ckeditor/ckeditor.js"></script>
+    <script src="js/plugins/hogan-2.0.0.js"></script>
+    <script src="js/plugins/jquery.nouislider.min.js"></script>
+    <script src="js/plugins/jquery.autosize-min.js"></script>
+    <script src="js/plugins/jquery.magnific-popup.min.js"></script>
+    <script src="js/plugins/jquery.pwstrength.min.js"></script>
+    <script src="js/plugins/jquery.mixitup.min.js"></script>
+    <script src="js/plugins/jquery.vticker.min.js"></script>
+    <script src="js/flot/jquery.flot.min.js"></script>
+    <script src="js/flot/jquery.flot.resize.min.js"></script>
+    <script src="js/flot/excanvas.min.js"></script>
+    <script src="js/plugins/layout.min.js"></script>
+    <script src="js/plugins/masonry.pkgd.min.js"></script>
+    <script src="js/plugins/json2.js"></script>
+    <script src="js/countup/jquery.countTo.js"></script>
+    <script src="js/countup/moment.min.js"></script>
+    <script src="js/clock/js/script.js"></script>
 
-					$articles.jScrollPane( scrollOptions );
+    <!-- // Custom //-->
+    
+    <script src="js/plugins/theme-demo.min.js"></script>    
 
-				}
-				// add custom scroll to menu
-				$menu.children( 'nav' ).jScrollPane( scrollOptions );
-
-			},
-			_goto				= function( chapter ) {
-
-					// get the url from history state (e.g. chapter=3) and extract the chapter number
-				var chapter 	= chapter || History.getState().url.queryStringToJSON().page,
-					isHome		= ( chapter === undefined ),
-					// we will jump to the introduction chapter if theres no chapter
-					$article 	= $( chapter ? '#' + 'chapter' + chapter : '#' + 'introduction' );
-
-					$('#link_introduction').removeClass('active');
-										$('#link_about').removeClass('active');
-										$('#link_my-skills').removeClass('active');
-										$('#link_experience').removeClass('active');
-										$('#link_education').removeClass('active');
-										$('#link_portfolio').removeClass('active');
-										$('#link_contact').removeClass('active');
-					
-					$('#link_'+chapter).addClass('active');
-
-				if( $article.length ) {
-
-						// left / top of the element
-					var left		= $article.position().left,
-						top			= $article.position().top,
-						// check if we are scrolling down or left
-						// is_v will be true when the screen size < 715
-						is_v		= ( $(document).height() - $(window).height() > 0 ),
-						// animation parameters:
-						// if vertically scrolling then the body will animate the scrollTop,
-						// otherwise the scroller (div.content-scroller) will animate the scrollLeft
-						param		= ( is_v ) ? { scrollTop : (isHome) ? top : top + $menu.outerHeight( true ) } : { scrollLeft : left },
-						$elScroller	= ( is_v ) ? $( 'html, body' ) : $scroller;
-
-					$elScroller.stop().animate( param, animation.speed, animation.easing, function() {
-
-					} );
-
-				}
-
-			},
-			_saveState			= function( chapter ) {
-
-				// adds a new state to the history object
-				// this will trigger the statechange on the window
-				if( History.getState().url.queryStringToJSON().page !== chapter ) {
-
-					History.pushState( null, null, '?page=' + chapter );
-					$('#link_introduction').removeClass('active');
-										$('#link_about').removeClass('active');
-										$('#link_my-skills').removeClass('active');
-										$('#link_experience').removeClass('active');
-										$('#link_education').removeClass('active');
-										$('#link_portfolio').removeClass('active');
-										$('#link_contact').removeClass('active');
-					
-					$('#link_'+chapter).addClass('active');
-				}
-
-			},
-			_layout				= function() {
-
-				// control the overflow property of the scroller (div.content-scroller)
-				var windowWidth	= $(window).width();
-
-				var isipad = navigator.userAgent.toLowerCase().indexOf("ipad");
-				if(isipad > -1)
-				{
-					//$('.totop-link').hide();
-					switch( true ) {
-					case ( windowWidth <= 768 ) : $scroller.scrollLeft( 0 ).css( 'overflow', 'visible' ); break;
-					case ( windowWidth <= 1024 ): $scroller.css( 'overflow-x', 'hidden' ); break;
-					case ( windowWidth > 1024 ) : $scroller.css( 'overflow', 'hidden' ); break;
-					};
-				}
-				else
-				{
-					switch( true ) {
-					case ( windowWidth <= 768 ) : $scroller.scrollLeft( 0 ).css( 'overflow', 'visible' ); break;
-					case ( windowWidth <= 1024 ): $scroller.css( 'overflow-x', 'hidden' ); break;
-					case ( windowWidth > 1024 ) : $scroller.css( 'overflow', 'hidden' ); break;
-					};
-				}
-
-			},
-			_initEvents			= function() {
-
-				_initWindowEvents();
-				_initMenuEvents();
-				_initArticleEvents();
-
-			},
-			_initWindowEvents	= function() {
-
-				$(window).on({
-
-					// when resizing the window we need to reinitialize or destroy the jScrollPanes
-					// depending on the screen size
-					'smartresize' : function( event ) {
-
-						var isipad = navigator.userAgent.toLowerCase().indexOf("ipad");
-						var ismobile =  navigator.userAgent.toLowerCase().indexOf("mobile");
-						if(isipad > -1 || ismobile > -1 )
-						{
-						}
-						else
-						{
-							_layout();
-
-							$('article.content').not(".noscroll").each( function() {
-
-								var $article 	= $(this),
-									aJSP		= $article.data( 'jsp' );
-
-								if( $(window).width() > 767 ) {
-
-									( aJSP === undefined ) ? $article.jScrollPane( scrollOptions ) : aJSP.reinitialise();
-
-									_initArticleEvents();
-
-								}
-								else {
-
-									// destroy article's custom scroll if screen size <= 715px
-									if( aJSP !== undefined )
-										aJSP.destroy();
-
-									$container.off( 'click', 'article.content' );
-
-								}
-
-							});
-
-							var nJSP = $menu.children( 'nav' ).data( 'jsp' );
-							nJSP.reinitialise();
-
-							// jumps to the current chapter
-							_goto();
-						}
-
-					},
-					// triggered when the history state changes - jumps to the respective chapter
-					'statechange' : function( event ) {
-
-						_goto();
-
-					}
-				});
-
-			},
-			_initMenuEvents		= function() {
-
-				// when we click a menu link we check which chapter the link refers to,
-				// and we save the state on the history obj.
-				// the statechange of the window is then triggered and the page/scroller scrolls to the 
-				// respective chapter's position
-				$links.on( 'click', function( event ) {
-
-					var href		= $(this).attr('href'),
-						chapter		= ( href.search(/chapter/) !== -1 ) ? href.substring(8) : 0;
-
-					_saveState( chapter );
-
-					return false;
-
-				});
-
-				// scrolls to the top of the page.
-				// this button will only be visible for screen size < 715
-				$toTop.on( 'click', function( event ) {
-
-					$( 'html, body' ).stop().animate( { scrollTop : 0 }, animation.speed, animation.easing );
-
-					return false;
-
-				});
-
-			},
-			_initArticleEvents	= function() {
-
-				// when we click on an article we check which chapter the article refers to,
-				// and we save the state on the history obj.
-				// the statechange of the window is then triggered and the page/scroller scrolls to the 
-				// respective chapter's position
-
-					if($(window).width()>768)
-					{
-						$container.on( 'click', 'article.content', function( event ) {
-
-							var id			= $(this).attr('id'),
-								chapter		= ( id.search(/chapter/) !== -1 ) ? id.substring(7) : 0;
-
-							_saveState( chapter );
-
-							//return false;
-
-						});
-					}
-
-			};
-
-		return { init : init };
-
-	})();
-
-	Page.init();
-
-});
-</script>        <script type='text/javascript' src='wp-content/plugins/contact-form-7/includes/js/jquery.form.mind03d.js?ver=3.51.0-2014.06.20'></script>
-<script type='text/javascript'>
-/* <![CDATA[ */
-var _wpcf7 = {"loaderUrl":"http:\/\/demo.nrgthemes.com\/projects\/mee\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","sending":"Sending ..."};
-/* ]]> */
-</script>
-<script type='text/javascript' src='wp-content/plugins/contact-form-7/includes/js/scriptsf39e.js?ver=4.0.1'></script>
-<script type='text/javascript' src='js/jquery.appear0e03.js?ver=1.0.0.0'></script>
-<script type='text/javascript' src='js/jquery.fitvids0e03.js?ver=1.0.0.0'></script>
-<script type='text/javascript' src='js/jquery.owl.carousel0e03.js?ver=1.0.0.0'></script>
-<script type='text/javascript' src='js/progressbar0e03.js?ver=1.0.0.0'></script>
-<script type='text/javascript' src='js/modernizr.custom0e03.js?ver=1.0.0.0'></script>
-<script type='text/javascript' src='js/head.min0e03.js?ver=1.0.0.0'></script>
-<script type='text/javascript' src='js/imagesloaded.min0e03.js?ver=1.0.0.0'></script>
-<script type='text/javascript' src='js/masonry.min0e03.js?ver=1.0.0.0'></script>
-<script type='text/javascript' src='js/class_helper0e03.js?ver=1.0.0.0'></script>
-<script type='text/javascript' src='js/grid_gallery0e03.js?ver=1.0.0.0'></script>
-<script type='text/javascript' src='js/carousel0e03.js?ver=1.0.0.0'></script>
-<script type='text/javascript' src='js/jquery.easypiechart0e03.js?ver=1.0.0.0'></script>
-<script type='text/javascript' src='js/text.rotator0e03.js?ver=1.0.0.0'></script>
-<script type='text/javascript' src='js/settings0e03.js?ver=1.0.0.0'></script>
-<script type='text/javascript' src='js/custom0e03.js?ver=1.0.0.0'></script>
-<script type='text/javascript' src='js/portfolio/source/jquery.fancybox0e03.js?ver=1.0.0.0'></script>
-<script type='text/javascript' src='js/portfolio/source/helpers/jquery.fancybox-media0e03.js?ver=1.0.0.0'></script>
-<script type='text/javascript' src='js/comment-reply.minf9b8.js?ver=4.0'></script>
-<script type='text/javascript' src='js/jquery.mousewheel0e03.js?ver=1.0.0.0'></script>
-<script type='text/javascript' src='js/mwheelIntent0e03.js?ver=1.0.0.0'></script>
-<script type='text/javascript' src='js/jquery.jscrollpane.min0e03.js?ver=1.0.0.0'></script>
-<script type='text/javascript' src='js/jquery.history0e03.js?ver=1.0.0.0'></script>
-<script type='text/javascript' src='js/core.string0e03.js?ver=1.0.0.0'></script>
-<script type='text/javascript' src='js/jquery.easing.1.30e03.js?ver=1.0.0.0'></script>
-<script type='text/javascript' src='js/jquery.smartresize0e03.js?ver=1.0.0.0'></script>
 </body>
 </html>
