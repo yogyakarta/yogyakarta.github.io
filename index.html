@@ -45,6 +45,30 @@
 
     <script src="js/countup/datetime.js"></script>
 
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <link rel="stylesheet" href="css/github-activity.css">
+
+    <script src="//code.jquery.com/jquery-1.11.0.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="js/github-activity.js"></script>
+
+    <script>
+      function updateFeed(username) {
+        GitHubActivity.feed({ username: username, selector: '#feed' });
+      }
+
+      $(document).ready(function() {
+        updateFeed('faridiot');
+
+        $('#update').click(function() { updateFeed($("#username").val()); });
+        $("#username").keypress(function(e) {
+          if (e.which === 13) {
+            updateFeed($("#username").val());
+          }
+        });
+      });
+    </script>
+
 </head>
 <body> 
 	<div id="container" class="clearfix">
@@ -1053,119 +1077,10 @@
                                         </div>
                                         <div class="activity-stream">
 
-                                            <div class="activity-stream-item" id="as-item-2">
-                                                <img src="images/users/farid.jpg" alt="" class="avatar" />
-                                                <div class="activity-stream-content">
-                                                    <div class="activity-stream-user">
-                                                        <a href="#" class="bold">A. Farid Mubarok</a> <span class="busy-dot"></span> <small class="text-muted pull-right">1 menit yang lalu</small>
-                                                    </div>
-                                                    <div class="activity-stream-title">
-                                                        Mengirim pesan di dinding.
-                                                    </div>
-                                                    <div class="activity-stream-sub">
-                                                        <a href="showcase/googlewebdesigner/pocong"><img src="images/upload/pocong_s.gif" width="100%"></a>
-                                                        <i>never tired of jumping...</i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="activity-stream-item" id="as-item-1">
-                                                <img src="images/users/farid.jpg" alt="" class="avatar" />
-                                                <div class="activity-stream-content">
-                                                    <div class="activity-stream-user">
-                                                        <a href="#" class="bold">A. Farid Mubarok</a> <span class="online-dot"></span> <small class="text-muted pull-right">21 menit yang lalu</small>
-                                                    </div>
-                                                    <div class="activity-stream-title">
-                                                        <a href="showcase/mobile">Cek disini faridiot.com, 100 % responsive!</a>
-                                                    </div>
-                                                </div>
-                                            </div>
                                             <div class="activity-stream-item">
-                                                <img src="images/users/farid.jpg" alt="" class="avatar" />
-                                                <div class="activity-stream-content">
-                                                    <div class="activity-stream-user">
-                                                        <a href="#" class="bold">A. Farid Mubarok</a> <span class="label label-warning">Comment</span> <small class="text-muted pull-right">27 menit yang lalu</small>
-                                                    </div>
-                                                    <div class="activity-stream-title">
-                                                        Mengirimkan komentar di <a href="http://www.imdb.com/title/tt1602620/" class="highlight-link">forum</a>.
-                                                    </div>
-                                                    <div class="activity-stream-sub">
-                                                        <p><img src="images/upload/html5.png" align="left"></p>
-                                                        <div class="spacer-10"></div>
-                                                        <p>HTML5 + CSS3 + Javascript, kombinasi sempurna untuk membangun web modern yang responsif</p>
-                                                        <div class="spacer-20"></div>
-                                                        <textarea class="auto-expand form-control noresizing" name="" placeholder="komentar..." data-autoexpand-size="100"></textarea>
-                                                    </div>
-                                                </div>
+                                                <div id="feed" style="height: 100%; width: 100%"></div>
                                             </div>
-                                            <div class="activity-stream-item">
-                                                <img src="images/users/farid.jpg" alt="" class="avatar" />
-                                                <div class="activity-stream-content">
-                                                    <div class="activity-stream-user">
-                                                        <a href="#" class="bold">A. Farid Mubarok</a> <small class="text-muted pull-right">44 menit yang lalu</small>
-                                                    </div>
-                                                    <div class="activity-stream-title">
-                                                        Menambahkan halaman meintenance: [<a href="makeover.html" class="underline">Getting a Makeover</a>]
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="activity-stream-item">
-                                                <img src="images/users/farid.jpg" alt="" class="avatar" />
-                                                <div class="activity-stream-content">
-                                                    <div class="activity-stream-user">
-                                                        <a href="#" class="bold">A. Farid Mubarok</a> <small class="text-muted pull-right">46 menit yang lalu</small>
-                                                    </div>
-                                                    <div class="activity-stream-title">
-                                                        Telah memposting sebuah video baru.
-                                                    </div>
-                                                    <div class="activity-stream-sub">
-                                                        <div class="video-container">
-                                                            <iframe width="560" height="315" src="//www.youtube.com/embed/Xm5i5kbIXzc" frameborder="0" allowfullscreen></iframe>
-                                                        </div><!-- End .video-container -->
-                                                        <i>the web is our largest shared resource, let's keep it free and open for us, and for the next generation,</i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="activity-stream-item">
-                                                <img src="images/users/farid.jpg" alt="" class="avatar" />
-                                                <div class="activity-stream-content">
-                                                    <div class="activity-stream-user">
-                                                        <a href="#" class="bold">A. Farid Mubarok</a> <span class="offline-dot"></span> <small class="text-muted pull-right">1 jam yang lalu</small>
-                                                    </div>
-                                                    <div class="activity-stream-title">
-                                                        Posted a quote.
-                                                    </div>
-                                                    <div class="activity-stream-sub">
-                                                        <blockquote class="pull-right">
-                                                            <p>Jogja +F Labs Experiments, responsive-web Designer dari Yogyakarta, Indonesia</p>
-                                                            <small>kunjungi official website <cite title="Source Title">faridiot.com</cite></small>
-                                                        </blockquote>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="activity-stream-item">
-                                                <img src="images/users/farid.jpg" alt="" class="avatar" />
-                                                <div class="activity-stream-content">
-                                                    <div class="activity-stream-user">
-                                                        <a href="#" class="bold">A. Farid Mubarok</a> <small class="text-muted pull-right">1 jam yang lalu</small>
-                                                    </div>
-                                                    <div class="activity-stream-title">
-                                                        Mengirimkan komentar di forum.
-                                                        <div class="spacer"></div>
-                                                        <a href="http://en.wikipedia.org/wiki/List_of_Academy_Award_winners_and_nominees_for_Best_Foreign_Language_Film" class="highlight-link">This List of Academy Award winners and nominees for Best Foreign Language Film</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="activity-stream-item">
-                                                <img src="images/users/farid.jpg" alt="" class="avatar" />
-                                                <div class="activity-stream-content">
-                                                    <div class="activity-stream-user">
-                                                        <a href="#" class="bold">A. Farid Mubarok</a> <small class="text-muted pull-right">2 jam yang lalu</small>
-                                                    </div>
-                                                    <div class="activity-stream-title">
-                                                        Mengubah informasi akunnya.
-                                                    </div>
-                                                </div>
-                                            </div>
+
                                         </div><!-- End .activity-stream -->
                                     </div><!-- End .inner-padding -->
                                     <!-- Lockscreen -->
