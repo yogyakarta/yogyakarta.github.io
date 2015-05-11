@@ -29,7 +29,7 @@ html {
   /* Stuff for toggling the longer descriptive text so that the BG image actually shows */
   position: absolute;
   padding: 10px;
-  top: 10%;
+  top: 20%;
   left: 50%;
   -ms-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
