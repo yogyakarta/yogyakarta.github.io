@@ -10,7 +10,7 @@ html, body {
   height: 100%;
   background: #fff;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 12px;
   font-family: Helvetica, arial, freesans, clean, sans-serif;
   line-height: 1.3;
   overflow-y: none;
@@ -36,7 +36,7 @@ html, body {
 .gha-feed small{
   color: #666;
   font-weight: normal;
-  font-size: 13px;
+  font-size: 10px;
 }
 
 .gha-feed small a {
