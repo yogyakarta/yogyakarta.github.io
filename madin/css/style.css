@@ -13,8 +13,7 @@ $background-attachment: Defaults to "fixed" - allows you to specify background a
 
 */
 html {
-  background: url("UlyaC.jpg") no-repeat center center fixed;
-  background-size: cover;
+  background: #ffffff;
 }
 
 /* Simple stuff for the demo text. */
@@ -25,12 +24,12 @@ html {
 .info {
   width: 100%;
   max-width: 40rem;
-  background: #fafafa;
-  padding: 2rem 2.5rem 3rem;
+  background: #ffffff;
   color: #424242;
   /* Stuff for toggling the longer descriptive text so that the BG image actually shows */
   position: absolute;
-  top: 50%;
+  padding: 10px;
+  top: 10%;
   left: 50%;
   -ms-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
