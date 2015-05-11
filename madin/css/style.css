@@ -13,7 +13,7 @@ $background-attachment: Defaults to "fixed" - allows you to specify background a
 
 */
 html {
-  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/44303/GODZILLA-NEO-WALLPAPER.jpg") no-repeat center center fixed;
+  background: url("UlyaC.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -28,7 +28,6 @@ html {
   background: #fafafa;
   padding: 2rem 2.5rem 3rem;
   color: #424242;
-  border-bottom-right-radius: 4.25rem;
   /* Stuff for toggling the longer descriptive text so that the BG image actually shows */
   position: absolute;
   top: 50%;
