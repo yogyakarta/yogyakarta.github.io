@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Weather Plugin Example</title>
+
+		<head>
+		<!-- include flatWeatherPlugin.css -->
+		<link href="css/flatWeatherPlugin.css" rel="stylesheet">
+		<!-- include a copy of jquery (if you haven't already) -->
+		<script src="js/jquery-2.1.1.min.js"></script>
+		<!-- include flatWeatherPlugin.js -->
+		<script src="js/jquery.flatWeatherPlugin.min.js"></script>  
+
+		<script type="text/javascript">
+		$(document).ready(function() {
+
+			//Setup the plugin, see readme for more examples
+			var example = $("#example").flatWeatherPlugin({
+			  location: "Yogyakarta", //city and region *required 
+			  country: "Indonesia",         //country *required 
+			  //optional:
+			  api: "openweathermap", //default: openweathermap (openweathermap or yahoo)
+			  //apikey: "your-api-key",   //optional api key for openweather
+			  view : "full", //default: full (partial, full, simple, today or forecast)
+			  displayCityNameOnly : false, //default: false (true/false) if you want to display only city name
+			  forecast: 5, //default: 5 (0 -5) how many days you want forecast
+			  render: true, //default: true (true/false) if you want plugin to generate markup
+			  loadingAnimation: true //default: true (true/false) if you want plugin to show loading animation
+			  //units : "metric" or "imperial" default: "auto"
+			});
+
+		});
+		</script>
+
+		<style>
+			
+			/* style the container however you please */
+			#example {
+				color:#fff; 
+				background: #000;
+				padding: 10px;
+				margin: 00px auto;
+				width: 100;
+				border-radius: 1px;
+			}
+
+			/* styling for this page only, ignore */
+			body {background: #000; font-family: sans-serif; background: #000; padding: 0; margin: 0;}
+			p {color: #888; width: 100%; margin: 0 auto; text-align: center;}
+
+		</style>
+
+
+	</head>
+	<body>
+
+		<div id="example"></div>
+	
+	</body>
+</html>

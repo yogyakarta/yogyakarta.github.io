@@ -250,6 +250,60 @@ background-size: auto 50%;
 background-repeat: no-repeat;
 background-position: 10px 50%;
 }
+.madin-icon{
+background:url(images/icons/white/white-png-logo-wh.png);
+background-size: auto 50%;
+background-repeat: no-repeat;
+background-position: 10px 50%;
+}
+.kalender-icon{
+background:url(images/icons/white/calendar.png);
+background-size: auto 50%;
+background-repeat: no-repeat;
+background-position: 10px 50%;
+}
+.pengajar-icon{
+background:url(images/icons/white/teaching.png);
+background-size: auto 50%;
+background-repeat: no-repeat;
+background-position: 10px 50%;
+}
+.pendaftaran-icon{
+background:url(images/icons/white/applicattion.png);
+background-size: auto 50%;
+background-repeat: no-repeat;
+background-position: 10px 50%;
+}
+.placement-icon{
+background:url(images/icons/white/a10.png);
+background-size: auto 50%;
+background-repeat: no-repeat;
+background-position: 10px 50%;
+}
+.denah-icon{
+background:url(images/icons/white/map-pointer2.png);
+background-size: auto 50%;
+background-repeat: no-repeat;
+background-position: 10px 50%;
+}
+.kitab-icon{
+background:url(images/icons/white/books8.png);
+background-size: auto 50%;
+background-repeat: no-repeat;
+background-position: 10px 50%;
+}
+.publikasi-icon{
+background:url(images/icons/white/textlines14.png);
+background-size: auto 50%;
+background-repeat: no-repeat;
+background-position: 10px 50%;
+}
+.hubungi-icon{
+background:url(images/icons/white/speech-bubble7.png);
+background-size: auto 50%;
+background-repeat: no-repeat;
+background-position: 10px 50%;
+}
 .about-icon{
 background:url(images/icons/white/user.png);
 background-size: auto 50%;
@@ -331,6 +385,12 @@ font-size:30px;
 font-weight:700;
 padding-left:10px;
 color:#FFFFFF;
+}
+.logo_title_modif{ 
+font-size:20px;
+font-weight:200;
+padding-left:10px;
+color:#777777;
 }
 .navbar:after {
   content: '';
@@ -526,6 +586,15 @@ margin:30px 0 0 0;
 display:inline-block;
 font-size:20px;
 }
+a.swiper_read_more_noborder{
+color:#ffca2e;
+border:0px solid #fff;
+padding:20px 30px;
+text-decoration:none;
+margin:30px 0 0 0;
+display:inline-block;
+font-size:15px;
+}
 /*===============================================*/
 /* 8. LISTS */
 /*===============================================*/	
@@ -612,10 +681,18 @@ color:#FFFFFF;
 }
 .popup h4{
 color:#FFFFFF;
-font-size:28px;
-font-weight:700;
+font-size:25px;
+font-weight:500;
 text-align:center;
 padding:0 0 10px 0;
+margin:0px;
+}
+.popup h3{
+color:#FFFFFF;
+font-size:25px;
+font-weight:500;
+text-align:center;
+padding:20px 0 10px 0;
 margin:0px;
 }
 .popup p{
