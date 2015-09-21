@@ -62,114 +62,367 @@
 		<form action="http://www.mobilesweety.com/portfolio/3/search.html"><h3><input id="search" type="text" placeholder="Search" /> </h3></form>
 		<ul>
 			<li class="active"><a href="index.html" data-transition="pop" class="contentLink">Home</a></li>
-			<li><a href="company-profile.html" data-transition="pop" class="contentLink">Company Profile</a></li>
-			<li><a href="products-services.html"data-transition="pop" class="contentLink">Products &amp; Services</a></li>
-			<li><a href="portfolio.html" data-transition="pop" class="contentLink">Portfolio</a></li>
-			<li><a href="news-events.html" data-transition="pop" class="contentLink">News &amp; Events</a></li>
-			<li><a href="gallery.html" data-transition="pop" class="contentLink">Gallery</a></li>
-			<li><a href="typography.html" data-transition="pop" class="contentLink">Typography</a></li>
-			<li><a href="blog.html" data-transition="pop" class="contentLink">Wordpress Blog</a></li>
-			<li><a href="twitter.html" data-transition="slide" class="contentLink">Twitter Feeds</a></li>
-			<li><a href="video-channel.html" data-transition="pop" class="contentLink">Video Channel</a></li>
-			<li><a href="contact-us.html" data-transition="pop" class="contentLink">Contact Us</a></li>
-			<li><a href="about.html" data-transition="slide" class="contentLink">About</a></li>
+			<li><a href="company-profile.html" data-transition="pop" class="contentLink">Profil Madin</a></li>
+			<li><a href="products-services.html"data-transition="pop" class="contentLink">Kalender akademik</a></li>
+			<li><a href="portfolio.html" data-transition="pop" class="contentLink">Tenaga pengajar</a></li>
+			<li><a href="news-events.html" data-transition="pop" class="contentLink">Placement test</a></li>
+			<li><a href="gallery.html" data-transition="pop" class="contentLink">Denah kelas</a></li>
+			<li><a href="typography.html" data-transition="pop" class="contentLink">The bakoul kitab</a></li>
+			<li><a href="blog.html" data-transition="pop" class="contentLink">Publikasi</a></li>
+			<li><a href="twitter.html" data-transition="slide" class="contentLink">Hubungi</a></li>
+			<li><a href="video-channel.html" data-transition="pop" class="contentLink">Madin Tv</a></li>
+			<li><a href="contact-us.html" data-transition="pop" class="contentLink">Munaqasah</a></li>
+			<li><a href="about.html" data-transition="slide" class="contentLink">Wisuda</a></li>
 		</ul>
 	</div><div data-dom-cache="false" data-role="page" class="pages" id="home" data-theme="a">
 	<div data-role="header">
             <div class="left">
                 <a href="#" class="showMenu menu-button"><img src="images/menu-button.png" width="40" /></a>
             </div>
-            <h1><p>Klassio RSV</p></h1>
+            <h1><p class="no-margin"><span id="Day"></span>, <span id="Date"></span> <span id="Month"></span> <span id="Year"></span>
+                 <script language="javascript">
+var Now = new Date();
+
+var TimeCheck =
+  {
+    "Day": convertDay(Now),
+    "Month": convertMonth(Now),
+    "Date": Now.getDate(),
+    "Year": Now.getFullYear(),
+    "Hours": convertHours(Now),
+    "Minutes":convertMinutes(Now),
+    "Seconds": convertSeconds(Now),
+    "AMPM": convertAMPM(Now)
+  };
+var Lunch =
+  {
+    "Hours": 11,
+    "Minutes": 0,
+    "Seconds": 0,
+    "AMPM": "AM"
+  };
+
+var dayEnd =
+  {
+    "Hours": 5,
+    "Minutes": 0,
+    "Seconds": 0,
+    "AMPM": "PM"
+  };
+
+var seconds = 0;
+
+var flag = 0;
+
+function getTime()
+{
+  seconds++;
+  flag++;
+  var Now = new Date();
+  var DeltaSeconds, DeltaMinutes, DeltaHours, DeltaAMPM, LunchSeconds, LunchMinutes, LunchHours, LunchAMPM, EndSeconds, EndMinutes, EndHours, EndAMPM;
+
+  var TimeObject = {
+    "Day": convertDay(Now),
+    "Month": convertMonth(Now),
+    "Date": Now.getDate(),
+    "Year": Now.getFullYear(),
+    "Hours": convertHours(Now),
+    "Minutes":convertMinutes(Now),
+    "Seconds": convertSeconds(Now),
+    "AMPM": convertAMPM(Now)
+  };
+  document.getElementById("Day").innerHTML = TimeObject.Day;
+  document.getElementById("Month").innerHTML = TimeObject.Month;
+  document.getElementById("Date").innerHTML = TimeObject.Date;
+  document.getElementById("Year").innerHTML = TimeObject.Year;
+  document.getElementById("Hours").innerHTML = TimeObject.Hours;
+  document.getElementById("Minutes").innerHTML = TimeObject.Minutes;
+  document.getElementById("Seconds").innerHTML = TimeObject.Seconds;
+  document.getElementById("AMPM").innerHTML = TimeObject.AMPM;
+
+
+
+  if(TimeCheck.Seconds!== TimeObject.Seconds)
+  {
+    //document.getElementById('Seconds').style.color='green';
+    DeltaSeconds = seconds%60;
+    if((seconds%60)<10)
+    {
+      DeltaSeconds = "0" + DeltaSeconds;
+    }
+
+  }
+  else if(TimeCheck.Seconds === TimeObject.Seconds && (seconds/60) >= 1)
+  {
+    //document.getElementById('Seconds').style.color='green';
+    DeltaSeconds = seconds%60;
+    if((seconds%60)<10)
+    {
+      DeltaSeconds = "0" + DeltaSeconds;
+    }
+  }else{
+    DeltaSeconds = "00";
+  }
+
+  if(TimeCheck.Minutes!== TimeObject.Minutes)
+  {
+    //document.getElementById('Minutes').style.color='#28B';
+    DeltaMinutes = Math.floor((seconds/60)%60);
+    if((seconds/60)<10)
+    {
+      DeltaMinutes = "0" + DeltaMinutes;
+    }
+  }
+  else
+  {
+    DeltaMinutes = "00";
+  }
+
+  if(TimeCheck.Hours!== TimeObject.Hours)
+  {
+    //document.getElementById('Hours').style.color='green';
+    DeltaHours = Math.floor(seconds/3600);
+    if((seconds/3600)<10)
+    {
+      DeltaHours = "0" + DeltaHours;
+    }
+  }
+  else
+  {
+    DeltaHours = "00";
+  }
+
+  if(TimeObject.AMPM == "AM")
+  {
+    LunchHours = (Lunch.Hours - TimeObject.Hours);
+    LunchMinutes = 60 - TimeObject.Minutes;
+    if(LunchHours === 0){
+      LunchHours = '00';
+    }
+    if(LunchMinutes === 60){
+      LunchHours+1;
+      LunchMinutes='00';
+    }
+    if(LunchMinutes<10)
+    {
+      LunchMinutes = "0" + LunchMinutes;
+    }
+    LunchSeconds = 60 - TimeObject.Seconds;
+    if(LunchSeconds<10)
+    {
+      LunchSeconds = "0" + LunchSeconds;
+    }
+    if(LunchSeconds === 0 && LunchMinutes === 0 )
+    {
+      Lunch.Hours = Lunch.Hours - TimeObject.Hours;
+    }
+    document.getElementById("hoursUntil").innerHTML = LunchHours;
+    document.getElementById("minutesUntil").innerHTML = LunchMinutes;
+    document.getElementById("secondsUntil").innerHTML = LunchSeconds;
+  }
+  else if(TimeObject.AMPM == "PM" && TimeObject.Hours == 12 && TimeObject.Minutes < 30)
+  {
+    document.getElementById("Lunch").innerHTML = "TIME FOR LUNCH!";
+    document.getElementById("Lunch").style.color='#14FF00';
+    document.getElementById("Lunch").style.fontSize='40px';
+    document.getElementById("Lunch").style.fontWeight='Bold';
+
+    if((flag%2))
+    {
+      setWhite();
+    }
+  }
+  else if(TimeObject.AMPM == "PM" && ((TimeObject.Hours == 12 && TimeObject.Minutes > 30) || TimeObject.Hours < 5))
+  {
+    EndHours = (dayEnd.Hours - TimeObject.Hours) - 1;
+    EndMinutes = 59 - TimeObject.Minutes;
+    if(EndMinutes<10)
+    {
+      EndMinutes = "0" + EndMinutes;
+    }
+    EndSeconds = 60 - TimeObject.Seconds;
+    if(EndSeconds<10)
+    {
+      EndSeconds = "0" + EndSeconds;
+    }
+    if(EndSeconds === 0 && EndMinutes === 0 )
+    {
+      dayEnd.Hours = dayEnd.Hours - TimeObject.Hours;
+    }
+    document.getElementById("End").innerHTML = "Until End of Work Day";
+    document.getElementById("hoursUntil").innerHTML = EndHours;
+    document.getElementById("minutesUntil").innerHTML = EndMinutes;
+    document.getElementById("secondsUntil").innerHTML = EndSeconds;
+  }
+  else
+  {
+    document.getElementById("Lunch").innerHTML = "Day has ended";
+    document.getElementById("Lunch").style.fontSize='16px';
+    document.getElementById("Lunch").style.color='#14FF00';
+  }
+
+  document.getElementById("DeltaHours").innerHTML = DeltaHours;
+  document.getElementById("DeltaMinutes").innerHTML = DeltaMinutes;
+  document.getElementById("DeltaSeconds").innerHTML = DeltaSeconds;
+
+}
+
+function convertDay(Now)
+{
+  var Temp;
+  var Test;
+  var Days = ["Ahad", "Senin", "Selasa", "Rabu", "Kamis", "Jum'at", "Sabtu"];
+  Temp = Now.getDay();
+  Test = Days[Temp];
+  return Test;
+}
+function convertMonth(Now)
+{
+  var Temp;
+  var Test;
+  var Month = ["January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  Temp = Now.getMonth();
+  Test = Month[Temp];
+  return Test;
+}
+function convertHours(Now)
+{
+  var Temp;
+
+  Temp = Now.getHours();
+
+  if(Temp === 12)
+  {
+
+  }
+  else if(Temp == 24)
+  {
+    Temp = 12;
+  }
+  else
+  {
+    Temp = Temp%12;
+  }
+
+  return Temp;
+}
+function convertMinutes(Now)
+{
+  var Temp = "";
+
+  Temp = Now.getMinutes();
+  if(Temp<10)
+  {
+    Temp = "0" + Temp;
+  }
+  return Temp;
+}
+function convertSeconds(Now)
+{
+  var Temp = "";
+
+  Temp = Now.getSeconds().toString();
+  if(Temp<10)
+  {
+    Temp = "0" + Temp;
+  }
+  return Temp;
+}
+
+function convertAMPM(Now)
+{
+  var Temp;
+  var x;
+
+  Temp = Now.getHours();
+  if(Temp >= 12)
+  {
+    x = "PM";
+  }
+  else
+  {
+    x = "AM";
+  }
+  return x;
+}
+
+function setWhite()
+{
+  document.getElementById("Lunch").style.color='#222';
+}
+
+function timeDifference(currentTime, alarmTime)
+{
+  var CTSecs = 0;
+  var ATSecs = 0;
+  var diffArray = [];
+  CTsecs = currentTime.getHours() * 60;
+  CTsecs = CTsecs + currentTime.getMinutes();
+  CTsecs = CTsecs * 60;
+  ATsecs = alarmTime.getHours() * 60;
+  ATsecs = ATsecs + alarmTime.getMinutes();
+  ATsecs = ATsecs * 60;
+}
+
+window.onload = function()
+{
+  setInterval(function(){getTime();}, 1000);
+  if(console === undefined)
+  {
+    console=function(){};
+  }
+};
+ </script></p><p class="no-margin"><span id="Hours" class="numbers"></span>:<span id="Minutes" class="numbers"></span>:<span id="Seconds" class="numbers"></span> <span id="AMPM"></span></p></h1>
 	</div>
         <div class="header-shadow"></div>
         <!-- /header -->
     
 	<div data-role="content" data-theme="a" class="minus-shadow">
-            <div class="cherry-slider ipad-width-optimize" style="height: 210px;">
-	
-	
-                <div anim="drop"anim-speed="700"anim-direction="down"anim-position-left="10%"anim-position-top="30" class="anim-item"><img src="images/content/girl-left.png" height="150" /></div>
-		<div anim="fade"anim-speed="300" class="anim-item wait-item"></div>
-		<div anim="drop"anim-speed="700"anim-direction="down"anim-position-left="43%"anim-position-top="30" class="anim-item"><img src="images/content/girl-middle.png" height="150" /></div>
-		<div anim="fade"anim-speed="300" class="anim-item wait-item"></div>
-		<div anim="drop"anim-speed="700"anim-direction="down"anim-position-left="70%"anim-position-top="30" class="anim-item"><img src="images/content/girl-right.png" height="150" /></div>
-		
-                <div anim="fade"anim-speed="300" class="anim-item wait-item"></div>
-                <div anim="fade"anim-speed="500"anim-direction="right"anim-position-left="30"anim-position-top="50"  class="anim-item"><p class="little-padding white-bg gray-border">FRESH&nbsp;&amp;&nbsp;BEAUTIFUL</p></div>
-                <div anim="fade"anim-speed="500"anim-direction="right"anim-position-left="30"anim-position-top="75" class="anim-item"><p class="little-padding white-bg gray-border">CRISP&nbsp;&amp;&nbsp;CLEAR</p></div>
-		<div anim="fade"anim-speed="700" class="anim-item wait-item"></div>
-                <div anim="fade"anim-speed="500"anim-direction="left"anim-position-right="30"anim-position-top="113"  class="anim-item"><p class="little-padding white-bg gray-border">WELCOME&nbsp;TO</p></div>
-                <div anim="fade"anim-speed="500"anim-direction="left"anim-position-right="30"anim-position-top="138"  class="anim-item"><p class="little-padding white-bg gray-border">KLASSIO&nbsp;RSV</p></div>
+	        <div class="cherry-slider" style="height: 176px;">
+                    <div anim="puff"anim-speed="1200"anim-direction="right"anim-position-left="50%"anim-position-top="20" class="anim-item" style="margin-left: -70px;"><img src="images/content/team.png" width="140" /></div>
+                    <div anim="slide"anim-speed="500"anim-direction="left"anim-position-left="30"anim-position-top="30"  class="anim-item"><p class="little-padding white-bg gray-border">Mobile</p></div>
+	            <div anim="slide"anim-speed="500"anim-direction="left"anim-position-left="30"anim-position-top="60"  class="anim-item"><p class="little-padding white-bg gray-border">MOTIVATED</p></div>
+	            <div anim="slide"anim-speed="500"anim-direction="left"anim-position-left="30"anim-position-top="90"  class="anim-item"><p class="little-padding white-bg gray-border">SINCERE</p></div>
+	            <div anim="slide"anim-speed="500"anim-direction="left"anim-position-left="30"anim-position-top="120"  class="anim-item"><p class="little-padding white-bg gray-border">TEAM</p></div>
                 
-                <div anim="fade"anim-speed="1500" class="anim-item wait-item"></div>
-                <div anim-action="break"anim="fade"anim-speed="700" class="anim-item"></div>
-                <div anim-action="restart"anim="fade"anim-speed="700" class="anim-item wait-item"></div>
-
-<!--
-                <div anim="puff"anim-speed="400"anim-direction="right"anim-position-left="35%"anim-position-top="30" class="anim-item"><img src="images/shadow-cherry-apple.png" width="200" /></div>
-                <div anim="fade"anim-speed="700" class="anim-item wait-item"></div>
-                <div anim="slide"anim-speed="500"anim-direction="left"anim-position-left="30"anim-position-top="30"  class="anim-item"><p class="little-padding white-bg gray-border">WELCOME&nbsp;TO</p></div>
-                <div anim="slide"anim-speed="500"anim-direction="left"anim-position-left="30"anim-position-top="60"  class="anim-item"><p class="little-padding white-bg gray-border">KLASSIC RSV</p></div>
-                <div anim="fade"anim-speed="700" class="anim-item wait-item"></div>
-                <div anim="slide"anim-speed="500"anim-direction="right"anim-position-right="30"anim-position-top="108"  class="anim-item"><p class="little-padding white-bg gray-border">FRESH&nbsp;&amp;&nbsp;BEAUTIFUL</p></div>
-                <div anim="slide"anim-speed="500"anim-direction="right"anim-position-right="30"anim-position-top="138" class="anim-item"><p class="little-padding white-bg gray-border">CRISP&nbsp;&amp;&nbsp;CLEAR</p></div>
-                
-                <div anim="fade"anim-speed="1500" class="anim-item wait-item"></div>
-                <div anim-action="break"anim="fade"anim-speed="700" class="anim-item"></div>
-                <div anim-action="restart"anim="fade"anim-speed="700" class="anim-item wait-item"></div>
--->                
-            </div>
+	        </div>
 	    <div class="white-content-box">
-		<h1 class="center">Welcome to <span>Klassio RSV</span></h1>
-		<p class="center  ipad-width-optimize">A creative and professional approach to deliver your message. Show off your content with class and style with this new Klassio template.</p>
+		<h1 class="center">Madrasah Diniyah <span>Wahid Hasyim</span></h1>
+		<p class="center  ipad-width-optimize">Jl. K.H. Wahid Hasyim No. 3 Gaten Condongcatur Depok Sleman Yogyakarta 55283. Telp. (0274) 484284. Website: madin.ppwahidhasyim.com Email: madin@ppwahidhasyim.com</p>
 	    </div>
-	    <br/>
-	    <div class="content-margin">
-		<br/>
-		<ul class="column-split flexible-column">
-		    <li>
-			    <p class="center right-padding">
-				<img src="images/content/responsive.png" width="48" />
-				<br/>
-				<strong>Responsive Design</strong>
-				<br/>
-				Leverage your goal with this fresh and innovative mobile template, get noticed uniquely.
-			    </p>
-		    </li>
-		    <li>
-			    <p class="center left-padding">
-				<img src="images/content/retina-clarity.png"  width="48" />
-				<br/>
-				<strong>Retina Clarity</strong>
-				<br/>
-				Leverage your goal with this fresh and innovative mobile template, get noticed uniquely.
-			    </p>
-		    </li>
-		    <li>
-			    <p class="center right-padding">
-				<img src="images/content/customizable.png"  width="48" />
-				<br/>
-				<strong>Flexible Theming</strong>
-				<br/>
-				Leverage your goal with this fresh and innovative mobile template, get noticed uniquely.
-			    </p>
-		    </li>
-		    <li>
-			    <p class="center left-padding">
-				<img src="images/content/in-motion.png" width="48" />
-				<br/>
-				<strong>In Motion</strong>
-				<br/>
-				Leverage your goal with this fresh and innovative mobile template, get noticed uniquely.
-			    </p>
-		    </li>
-		</ul>
+            <div class="white-content-box ">
+		<a data-transition="slide" class="icon" href="product-detail.html">
+			<img src="images/content/cargo-logistics.png" width="48" />
+			<span>Jadwal KBM Madin</span>
+		</a>
+		<a data-transition="slide" class="icon" href="product-detail.html">
+			<img src="images/content/interior-decoration.png" width="48" />
+			<span>Kalender akademik</span>
+		</a>
+		<a data-transition="slide" class="icon" href="product-detail.html">
+			<img src="images/content/software-development.png" width="48" />
+			<span>Daftar Kontak ustadz/ah</span>
+		</a>
+		<a data-transition="slide" class="icon" href="product-detail.html">
+			<img src="images/content/weather-forecast.png" width="48" />
+			<span>Perkiraan cuaca</span>
+		</a>
+		<a data-transition="slide" class="icon" href="product-detail.html">
+			<img src="images/content/project-management.png" width="48" />
+			<span>Pendaftaran</span>
+		</a>
+		<a data-transition="slide" class="icon" href="product-detail.html">
+			<img src="images/content/interior-decoration.png" width="48" />
+			<span>Placement test</span>
+		</a>
+
+
 		<div class="clear"></div>
-		<br/>
-	    </div>
+            </div>
+
 	</div><!-- /content -->
         
-        <div data-role="footer"><p>&copy; Klassio RSV. All Rights Reserved. <span><a class="scroll-to-top"><img src="images/top.png" width="32"/></a></span></p></div></div><!-- /page -->
+        <div data-role="footer"><p>&copy; 2015 Madin<span><a class="scroll-to-top"><img src="images/top.png" width="32"/></a></span></p></div></div><!-- /page -->
 </body>
 
 <!-- Mirrored from www.mobilesweety.com/portfolio/3/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Sep 2015 02:26:46 GMT -->
