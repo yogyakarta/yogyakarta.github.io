@@ -28,8 +28,6 @@
 
 
 
-
-
 .drop-shadow(@x-axis: 0, @y-axis: 1px, @blur: 2px, @alpha: 0.1) {
   -webkit-box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
   -moz-box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
@@ -328,8 +326,9 @@ body {
     font-weight: 400;
 	overflow: hidden;
 	color: @moreGrayColor;
+    
 	p {
-		margin: 15px 0 !important;
+		text-align: left; color: #fff; margin: 15px 0 !important;
                 span {
                     float: right;
                     margin-top: -6px;
