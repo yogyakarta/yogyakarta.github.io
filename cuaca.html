@@ -32,7 +32,7 @@
 
 	 <!-- fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600' rel='stylesheet' type='text/css'>
-	
+
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script src="js/jquery-ui-1.8.24.custom.min.js"></script>
 	
@@ -103,6 +103,7 @@
 </head> 
 
 <body>
+    <div><input id="btReload" type="button" value="Reload Page" /></div>
 	<!-- Splash screen -->
   	 <div id="splash"> 
 	   <img id="splash-bg" src="images/splash/splash-alternate.png" alt="splash image"/>
@@ -163,6 +164,14 @@
         <div data-role="footer" style="text-align: left"><p>&copy; 2015 Madin <span><a class="scroll-to-top"><img src="images/top.png" width="32"/></a></span></p></div>
 </div><!-- /page -->
 </body>
-
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('#btReload').click(function() { location.reload(true); });    // RELOAD PAGE ON BUTTON CLICK EVENT.
+ 
+        // SET AUTOMATIC PAGE RELOAD TIME TO 5000 MILISECONDS (5 SECONDS).
+        setInterval('refreshPage()', 5000);
+    });
+    function refreshPage() { location.reload(); }
+</script>
 <!-- Mirrored from www.mobilesweety.com/portfolio/3/products-services.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Sep 2015 02:27:21 GMT -->
 </html>

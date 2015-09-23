@@ -49,56 +49,6 @@
 	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
         
 	<script type="text/javascript" src="js/appbb80.js?v=30"></script>
-
-		<!-- include flatWeatherPlugin.css -->
-		<link href="css/flatWeatherPlugin.css" rel="stylesheet">
-		<!-- include a copy of jquery (if you haven't already) -->
-		<script src="js/jquery-2.1.1.min.js"></script>
-		<!-- include flatWeatherPlugin.js -->
-		<script src="js/jquery.flatWeatherPlugin.min.js"></script>  
-
-		<script type="text/javascript">
-		$(document).ready(function() {
-
-			//Setup the plugin, see readme for more examples
-			var example = $("#example").flatWeatherPlugin({
-			  location: "Condongcatur", //city and region *required 
-			  country: "Indonesia",         //country *required 
-			  //optional:
-			  api: "openweathermap", //default: openweathermap (openweathermap or yahoo)
-			  //apikey: "your-api-key",   //optional api key for openweather
-			  view : "full", //default: full (partial, full, simple, today or forecast)
-			  displayCityNameOnly : true, //default: false (true/false) if you want to display only city name
-			  forecast: 5, //default: 5 (0 -5) how many days you want forecast
-			  render: true, //default: true (true/false) if you want plugin to generate markup
-			  loadingAnimation: true //default: true (true/false) if you want plugin to show loading animation
-			  //units : "metric" or "imperial" default: "auto"
-			});
-
-		});
-		</script>
-
-		<style>
-			
-			/* style the container however you please */
-			#example {
-				color:#000; 
-				background: #fff;
-				padding: 10px;
-				margin: 0px auto;
-				width: 100;
-				border-radius: 1px;
-			}
-
-			/* styling for this page only, ignore */
-			body {background: #000; font-family: sans-serif; background: #000; padding: 0; margin: 0;}
-			p {color: #888; width: 100%; margin: 0 auto; text-align: center;}
-            h2plus {color: #0094ff; font-size: 18px;}
-            h2plus::before {color: #0094ff; content:"Gaten, Condongcatur, ";}
-            h2plus::after {content: " Sleman, Yogyakarta";}
-
-		</style>
-
 </head> 
 
 <body>
@@ -453,7 +403,7 @@ window.onload = function()
 			<img src="images/content/kontak.png" width="48" />
 			<span>Daftar Kontak ustadz/ah</span>
 		</a>
-		<a class="icon" href="cuaca.html">
+		<a data-transition="slide" class="icon" href="cuaca.html">
 			<img src="images/content/cuaca.png" width="48" />
 			<span>Perkiraan cuaca Jogja</span>
 		</a>
@@ -473,14 +423,6 @@ window.onload = function()
 	</div><!-- /content -->
         
         <div data-role="footer"><p>&copy; 2015 Madin<span><a class="scroll-to-top"><img src="images/top.png" width="32"/></a></span></p></div></div><!-- /page -->
-
-<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.3/underscore-min.js'></script>
-<script src='http://cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.2/backbone-min.js'></script>
-<script src='http://cdnjs.cloudflare.com/ajax/libs/backbone-localstorage.js/1.0/backbone.localStorage-min.js'></script>
-<script src='http://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.10.2/typeahead.bundle.min.js'></script>
-
-<script src="js/placement.js"></script>
 
 </body>
 
