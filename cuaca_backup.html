@@ -50,9 +50,54 @@
         
 	<script type="text/javascript" src="js/appbb80.js?v=30"></script>
 
+		<!-- include flatWeatherPlugin.css -->
+		<link href="css/flatWeatherPlugin.css" rel="stylesheet">
+		<!-- include a copy of jquery (if you haven't already) -->
+		<script src="js/jquery-2.1.1.min.js"></script>
+		<!-- include flatWeatherPlugin.js -->
+		<script src="js/jquery.flatWeatherPlugin.min.js"></script>  
 
+		<script type="text/javascript">
+		$(document).ready(function() {
 
+			//Setup the plugin, see readme for more examples
+			var example = $("#example").flatWeatherPlugin({
+			  location: "Condongcatur", //city and region *required 
+			  country: "Indonesia",         //country *required 
+			  //optional:
+			  api: "openweathermap", //default: openweathermap (openweathermap or yahoo)
+			  //apikey: "your-api-key",   //optional api key for openweather
+			  view : "full", //default: full (partial, full, simple, today or forecast)
+			  displayCityNameOnly : true, //default: false (true/false) if you want to display only city name
+			  forecast: 5, //default: 5 (0 -5) how many days you want forecast
+			  render: true, //default: true (true/false) if you want plugin to generate markup
+			  loadingAnimation: true //default: true (true/false) if you want plugin to show loading animation
+			  //units : "metric" or "imperial" default: "auto"
+			});
 
+		});
+		</script>
+
+		<style>
+			
+			/* style the container however you please */
+			#example {
+				color:#000; 
+				background: #fff;
+				padding: 10px;
+				margin: 0px auto;
+				width: 100;
+				border-radius: 1px;
+			}
+
+			/* styling for this page only, ignore */
+			body {background: #000; font-family: sans-serif; background: #000; padding: 0; margin: 0;}
+			p {color: #888; width: 100%; margin: 0 auto; text-align: center;}
+            h2plus {color: #0094ff; font-size: 18px;}
+            h2plus::before {color: #0094ff; content:"Gaten, Condongcatur, ";}
+            h2plus::after {content: " Sleman, Yogyakarta";}
+
+		</style>
 
 
 </head> 
@@ -101,7 +146,7 @@
             </div>
             <div class="white-content-box ">
 		<h2 style="margin-top: 0;">Perkiraan Cuaca</h2>
-                <iframe src="cuaca_iframe.html" frameborder="no" border="0" scrolling="no" width="100%" height="auto;"></iframe> 
+<div id="example"></div>
 
 
 		<div class="clear"></div>
@@ -119,5 +164,14 @@
         <div data-role="footer" style="text-align: left"><p>&copy; 2015 Madin <span><a class="scroll-to-top"><img src="images/top.png" width="32"/></a></span></p></div>
 </div><!-- /page -->
 </body>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('#btReload').click(function() { location.reload(true); });    // RELOAD PAGE ON BUTTON CLICK EVENT.
+ 
+        // SET AUTOMATIC PAGE RELOAD TIME TO 5000 MILISECONDS (5 SECONDS).
+        setInterval('refreshPage()', 5000);
+    });
+    function refreshPage() { location.reload(); }
+</script>
 <!-- Mirrored from www.mobilesweety.com/portfolio/3/products-services.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Sep 2015 02:27:21 GMT -->
 </html>
