@@ -272,7 +272,7 @@ body {
     
     h1.ui-title {
         margin: 0 20% !important;
-        text-transform: uppercase;
+        text-transform: none;
 	color: @typoColor;
 	
         p {
